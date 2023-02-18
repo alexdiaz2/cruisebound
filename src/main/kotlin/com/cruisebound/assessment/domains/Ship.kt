@@ -13,6 +13,6 @@ class Ship {
     var reviews: Int? = null
     var image: String? = null
 
-    @ManyToOne
+    @ManyToOne(cascade = [CascadeType.ALL])
     var line: Line? = Line()
 }
