@@ -38,14 +38,15 @@ The db/init.sh script will create the sailings database automatically
 
 To run the project you should execute the following commands:
 
+- mvn clean install
+
 ### Local
 
-1. mvn clean install
-2. mvn spring-boot:run
+- mvn spring-boot:run
 
 ### Docker
 
-1. docker-compose up
+- docker-compose up
 
 ## Usage
 
