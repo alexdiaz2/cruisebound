@@ -1,6 +1,7 @@
 package com.cruisebound.assessment.domains
 
 import com.cruisebound.assessment.utils.ItineraryConverter
+import com.fasterxml.jackson.annotation.JsonIgnore
 import jakarta.persistence.*
 import java.time.LocalDate
 
@@ -9,6 +10,7 @@ import java.time.LocalDate
 class Sailing {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @JsonIgnore
     var id: Long = 0
     var price: Double? = null
     var name: String? = null

@@ -1,5 +1,6 @@
 package com.cruisebound.assessment.domains
 
+import com.fasterxml.jackson.annotation.JsonIgnore
 import jakarta.persistence.*
 
 @Entity
@@ -7,6 +8,7 @@ import jakarta.persistence.*
 class Ship {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @JsonIgnore
     var id: Long = 0
     var name: String? = null
     var rating: Double? = null
