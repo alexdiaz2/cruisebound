@@ -1,0 +1,629 @@
+{
+	"info": {
+		"_postman_id": "b04d1bec-e2a4-4dcd-99e7-4f5a9e502642",
+		"name": "Cruisebound",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "11436546"
+	},
+	"item": [
+		{
+			"name": "Example 1 - Default sorting: by Id ascending",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/api/v1/sailings/search",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"sailings",
+						"search"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Example 1 - Default sorting: by Id ascending",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/api/v1/sailings/search",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"sailings",
+								"search"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 20 Feb 2023 18:28:17 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"totalResults\": 100,\n    \"totalPages\": 10,\n    \"currentPage\": 1,\n    \"results\": [\n        {\n            \"price\": 319,\n            \"name\": \"7 Night Mediterranean - Western Cruise\",\n            \"ship\": {\n                \"name\": \"MSC Virtuosa\",\n                \"rating\": 4.5,\n                \"reviews\": 123,\n                \"image\": \"https://res.cloudinary.com/cruisebound/image/upload/f_auto/v1656397931/production/small_msc_vi_item_76c6c4b53c.png\",\n                \"line\": {\n                    \"logo\": \"https://res.cloudinary.com/cruisebound/image/upload/f_auto/v1649242239/production/line_logo_6_4bbd4246_eded_4690_bd5e_b184f4a64e82_0f9ac3171a.jpg\",\n                    \"name\": \"MSC Cruises\"\n                }\n            },\n            \"itinerary\": [\n                \"Naples, Italy\",\n                \"Palma de Mallorca, Spain\",\n                \"Barcelona, Spain\",\n                \"Marseille, France\",\n                \"Genoa, Italy\",\n                \"La Spezia (Cinque Terre), Italy\",\n                \"Naples, Italy\"\n            ],\n            \"region\": \"Caribbean\",\n            \"departureDate\": \"2022-11-23\",\n            \"returnDate\": \"2022-11-30\",\n            \"duration\": 7\n        },\n        {\n            \"price\": 3099,\n            \"name\": \"27 Day New Zealand & South Australia Discovery Collector\",\n            \"ship\": {\n                \"name\": \"Westerdam\",\n                \"rating\": 4.5,\n                \"reviews\": 123,\n                \"image\": \"https://res.cloudinary.com/cruisebound/image/upload/f_auto/v1649244829/production/small_ship_main_image_190_62303d8c_3c92_448e_ad01_0a02e7eedca3_0462af156b.jpg\",\n                \"line\": {\n                    \"logo\": \"https://res.cloudinary.com/cruisebound/image/upload/f_auto/v1649730444/production/line_logo_5_ed91fe81_edf0_4cbb_a115_aa5495bbf2dc_3f0bbebc13.jpg\",\n                    \"name\": \"Holland America Line\"\n                }\n            },\n            \"itinerary\": [\n                \"Sydney, Australia\",\n                \"Eden, Australia\",\n                \"Hobart, Australia\",\n                \"Port Arthur, Australia\",\n                \"Hobart, Australia\",\n                \"Adelaide, Australia\",\n                \"Adelaide, Australia\",\n                \"Kangaroo Island, Australia\",\n                \"Melbourne, Australia\",\n                \"Phillip Island, Australia\",\n                \"Sydney, Australia\",\n                \"Melbourne, Australia\",\n                \"Hobart, Australia\",\n                \"Milford Sound, New Zealand\",\n                \"Port Chalmers (Dunedin), New Zealand\",\n                \"Lyttelton (Christchurch), New Zealand\",\n                \"Christchurch, New Zealand\",\n                \"Wellington, New Zealand\",\n                \"Napier, New Zealand\",\n                \"Tauranga, New Zealand\",\n                \"Auckland, New Zealand\"\n            ],\n            \"region\": \"Caribbean\",\n            \"departureDate\": \"2022-11-23\",\n            \"returnDate\": \"2022-12-20\",\n            \"duration\": 27\n        },\n        {\n            \"price\": 1039,\n            \"name\": \"10 NIGHT Australia CRUISE\",\n            \"ship\": {\n                \"name\": \"Royal Princess\",\n                \"rating\": 4.5,\n                \"reviews\": 123,\n                \"image\": \"https://res.cloudinary.com/cruisebound/image/upload/f_auto/v1649245266/production/small_ship_main_image_308_46e37dcc_9f24_45de_9d47_6dfc1e20687f_8f6cf3bb8e.jpg\",\n                \"line\": {\n                    \"logo\": \"https://res.cloudinary.com/cruisebound/image/upload/f_auto/v1649727921/production/Princess2020_1_Line_RGB_2_Color_c23999dc2a.jpg\",\n                    \"name\": \"Princess Cruises\"\n                }\n            },\n            \"itinerary\": [\n                \"Sydney, Australia\",\n                \"Brisbane, Australia\",\n                \"Airlie Beach\",\n                \"Yorkeys Knob\",\n                \"Port Douglas, Australia\",\n                \"Willis Island\",\n                \"Sydney, Australia\"\n            ],\n            \"region\": \"Caribbean\",\n            \"departureDate\": \"2022-11-23\",\n            \"returnDate\": \"2022-12-03\",\n            \"duration\": 10\n        },\n        {\n            \"price\": 378,\n            \"name\": \"3 Night Sampler Cruise\",\n            \"ship\": {\n                \"name\": \"Quantum of the Seas\",\n                \"rating\": 4.5,\n                \"reviews\": 123,\n                \"image\": \"https://res.cloudinary.com/cruisebound/image/upload/f_auto/v1649245335/production/small_ship_main_image_1342438_37b5587a_0342_427a_97a9_40072f0a422c_8910b486e2.png\",\n                \"line\": {\n                    \"logo\": \"https://res.cloudinary.com/cruisebound/image/upload/f_auto/v1650047283/production/Royal_Caribbean_Logo_7bf92b5951.jpg\",\n                    \"name\": \"Royal Caribbean International\"\n                }\n            },\n            \"itinerary\": [\n                \"Brisbane, Australia\",\n                \"Brisbane, Australia\"\n            ],\n            \"region\": \"Caribbean\",\n            \"departureDate\": \"2022-11-24\",\n            \"returnDate\": \"2022-11-27\",\n            \"duration\": 3\n        },\n        {\n            \"price\": 1255,\n            \"name\": \"4 Night Penang & Phuket Cruise\",\n            \"ship\": {\n                \"name\": \"Spectrum of the Seas\",\n                \"rating\": 4.5,\n                \"reviews\": 123,\n                \"image\": \"https://res.cloudinary.com/cruisebound/image/upload/f_auto/v1649245353/production/ship_main_image_1379549_f89e4498_6c8c_4f46_80f5_2568231e243b_635094e1f7.jpg\",\n                \"line\": {\n                    \"logo\": \"https://res.cloudinary.com/cruisebound/image/upload/f_auto/v1650047283/production/Royal_Caribbean_Logo_7bf92b5951.jpg\",\n                    \"name\": \"Royal Caribbean International\"\n                }\n            },\n            \"itinerary\": [\n                \"Singapore, Singapore\",\n                \"Penang, Malaysia\",\n                \"Phuket, Thailand\",\n                \"Singapore, Singapore\"\n            ],\n            \"region\": \"Caribbean\",\n            \"departureDate\": \"2022-11-24\",\n            \"returnDate\": \"2022-11-28\",\n            \"duration\": 4\n        },\n        {\n            \"price\": 249,\n            \"name\": \"7 Night Europe\",\n            \"ship\": {\n                \"name\": \"MSC Virtuosa\",\n                \"rating\": 4.5,\n                \"reviews\": 123,\n                \"image\": \"https://res.cloudinary.com/cruisebound/image/upload/f_auto/v1656397931/production/small_msc_vi_item_76c6c4b53c.png\",\n                \"line\": {\n                    \"logo\": \"https://res.cloudinary.com/cruisebound/image/upload/f_auto/v1649242239/production/line_logo_6_4bbd4246_eded_4690_bd5e_b184f4a64e82_0f9ac3171a.jpg\",\n                    \"name\": \"MSC Cruises\"\n                }\n            },\n            \"itinerary\": [\n                \"Le Havre (Paris), France\",\n                \"Southampton, England\",\n                \"Hamburg, Germany\",\n                \"Rotterdam, The Netherlands\",\n                \"Zeebrugge (Bruges), Belgium\",\n                \"Le Havre (Paris), France\"\n            ],\n            \"region\": \"Caribbean\",\n            \"departureDate\": \"2022-11-24\",\n            \"returnDate\": \"2022-12-01\",\n            \"duration\": 7\n        },\n        {\n            \"price\": 569,\n            \"name\": \"9 Night Panama Canal-Panama City\",\n            \"ship\": {\n                \"name\": \"Norwegian Jewel\",\n                \"rating\": 4.5,\n                \"reviews\": 123,\n                \"image\": \"https://res.cloudinary.com/cruisebound/image/upload/f_auto/v1649244885/production/small_ship_main_image_231_c513bbf3_8748_4c7c_812f_dada3d989e4b_f2e92c8db8.jpg\",\n                \"line\": {\n                    \"logo\": \"https://res.cloudinary.com/cruisebound/image/upload/f_auto/v1649730379/production/line_logo_4_539b0d9d_8661_4556_810e_da0ac33c1aac_1820d6dc08.png\",\n                    \"name\": \"Norwegian Cruise Line\"\n                }\n            },\n            \"itinerary\": [\n                \"Colon, Panama\",\n                \"Cartagena, Colombia\",\n                \"Port of Oranjestad, Aruba, Caribbean\",\n                \"Kralendijk, Bonaire, Dutch Antilles\",\n                \"Willemstad, Curacao\",\n                \"Puerto Limon, Costa Rica\",\n                \"Panama Canal, Panama\",\n                \"Panama City, Panama\"\n            ],\n            \"region\": \"Caribbean\",\n            \"departureDate\": \"2022-11-24\",\n            \"returnDate\": \"2022-12-03\",\n            \"duration\": 9\n        },\n        {\n            \"price\": 459,\n            \"name\": \"13 Night Grand Voyage Cruise\",\n            \"ship\": {\n                \"name\": \"MSC Armonia\",\n                \"rating\": 4.5,\n                \"reviews\": 123,\n                \"image\": \"https://res.cloudinary.com/cruisebound/image/upload/f_auto/v1649244861/production/small_ship_main_image_229_17b3f278_06cf_443d_ae54_f9266ae1260a_97f74e639e.webp\",\n                \"line\": {\n                    \"logo\": \"https://res.cloudinary.com/cruisebound/image/upload/f_auto/v1649242239/production/line_logo_6_4bbd4246_eded_4690_bd5e_b184f4a64e82_0f9ac3171a.jpg\",\n                    \"name\": \"MSC Cruises\"\n                }\n            },\n            \"itinerary\": [\n                \"Barcelona, Spain\",\n                \"Alicante, Spain\",\n                \"Malaga, Spain\",\n                \"Funchal, Madeira, Portugal\",\n                \"Bahia de Salvador, Brazil\",\n                \"Rio de Janeiro, Brazil\"\n            ],\n            \"region\": \"Caribbean\",\n            \"departureDate\": \"2022-11-24\",\n            \"returnDate\": \"2022-12-07\",\n            \"duration\": 13\n        },\n        {\n            \"price\": 998,\n            \"name\": \"3 Night Bahamas & Perfect Day Cruise\",\n            \"ship\": {\n                \"name\": \"Independence of the Seas\",\n                \"rating\": 4.5,\n                \"reviews\": 123,\n                \"image\": \"https://res.cloudinary.com/cruisebound/image/upload/f_auto/v1649245324/production/small_ship_main_image_626_26eb9121_3b72_41e9_a75e_8cf9e40c0a5a_a00f6d14b5.jpg\",\n                \"line\": {\n                    \"logo\": \"https://res.cloudinary.com/cruisebound/image/upload/f_auto/v1650047283/production/Royal_Caribbean_Logo_7bf92b5951.jpg\",\n                    \"name\": \"Royal Caribbean International\"\n                }\n            },\n            \"itinerary\": [\n                \"Port Canaveral, Florida\",\n                \"Nassau, Bahamas\",\n                \"Perfect Day at CocoCay\",\n                \"Port Canaveral, Florida\"\n            ],\n            \"region\": \"Caribbean\",\n            \"departureDate\": \"2022-11-25\",\n            \"returnDate\": \"2022-11-28\",\n            \"duration\": 3\n        },\n        {\n            \"price\": 824,\n            \"name\": \"3 Night Ensenada Cruise\",\n            \"ship\": {\n                \"name\": \"Navigator Of The Seas\",\n                \"rating\": 4.5,\n                \"reviews\": 123,\n                \"image\": \"https://res.cloudinary.com/cruisebound/image/upload/f_auto/v1649245325/production/small_ship_main_image_116_3a1e2c10_d98c_4f62_b873_90e10d38f84c_ba82c91be0.jpg\",\n                \"line\": {\n                    \"logo\": \"https://res.cloudinary.com/cruisebound/image/upload/f_auto/v1650047283/production/Royal_Caribbean_Logo_7bf92b5951.jpg\",\n                    \"name\": \"Royal Caribbean International\"\n                }\n            },\n            \"itinerary\": [\n                \"Los Angeles, California\",\n                \"Ensenada, Mexico\",\n                \"Los Angeles, California\"\n            ],\n            \"region\": \"Caribbean\",\n            \"departureDate\": \"2022-11-25\",\n            \"returnDate\": \"2022-11-28\",\n            \"duration\": 3\n        }\n    ]\n}"
+				}
+			]
+		},
+		{
+			"name": "Example 2 - Default sorting: by Id ascending and showing page 5 of 10",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/api/v1/sailings/search?page=5",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"sailings",
+						"search"
+					],
+					"query": [
+						{
+							"key": "page",
+							"value": "5"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Example 2 - Default sorting: by Id ascending and showing page 5 of 10",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/api/v1/sailings/search?page=5",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"sailings",
+								"search"
+							],
+							"query": [
+								{
+									"key": "page",
+									"value": "5"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 20 Feb 2023 18:28:24 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"totalResults\": 100,\n    \"totalPages\": 10,\n    \"currentPage\": 5,\n    \"results\": [\n        {\n            \"price\": 819.69,\n            \"name\": \"10 Night Mediterranean\",\n            \"ship\": {\n                \"name\": \"MSC Magnifica\",\n                \"rating\": 4.5,\n                \"reviews\": 123,\n                \"image\": \"https://res.cloudinary.com/cruisebound/image/upload/f_auto/v1649244831/production/small_ship_main_image_195312_3267a0fe_2452_4846_856b_4376f3097ca4_1e25cc4a68.jpg\",\n                \"line\": {\n                    \"logo\": \"https://res.cloudinary.com/cruisebound/image/upload/f_auto/v1649242239/production/line_logo_6_4bbd4246_eded_4690_bd5e_b184f4a64e82_0f9ac3171a.jpg\",\n                    \"name\": \"MSC Cruises\"\n                }\n            },\n            \"itinerary\": [\n                \"Barcelona, Spain\",\n                \"Tangier, Morocco\",\n                \"Tenerife, Canary Islands, Spain\",\n                \"Funchal, Madeira, Portugal\",\n                \"Malaga, Spain\",\n                \"Marseille, France\",\n                \"Genoa, Italy\"\n            ],\n            \"region\": \"Caribbean\",\n            \"departureDate\": \"2022-11-22\",\n            \"returnDate\": \"2022-12-02\",\n            \"duration\": 10\n        },\n        {\n            \"price\": 611,\n            \"name\": \"10 Night Transcanal Cruise\",\n            \"ship\": {\n                \"name\": \"Emerald Princess\",\n                \"rating\": 4.5,\n                \"reviews\": 123,\n                \"image\": \"https://res.cloudinary.com/cruisebound/image/upload/f_auto/v1649245266/production/small_ship_main_image_306_a96661df_f98f_46ff_899c_8f7d83c7a388_a684278220.jpg\",\n                \"line\": {\n                    \"logo\": \"https://res.cloudinary.com/cruisebound/image/upload/f_auto/v1649727921/production/Princess2020_1_Line_RGB_2_Color_c23999dc2a.jpg\",\n                    \"name\": \"Princess Cruises\"\n                }\n            },\n            \"itinerary\": [\n                \"Fort Lauderdale (Port Everglades), Florida\",\n                \"Cartagena, Colombia\",\n                \"Colon, Panama\",\n                \"Limon Bay Panama Canal, Panama\",\n                \"Cozumel, Mexico\",\n                \"Fort Lauderdale (Port Everglades), Florida\"\n            ],\n            \"region\": \"Caribbean\",\n            \"departureDate\": \"2022-11-23\",\n            \"returnDate\": \"2022-12-03\",\n            \"duration\": 10\n        },\n        {\n            \"price\": 3099,\n            \"name\": \"27 Day New Zealand & South Australia Discovery Collector\",\n            \"ship\": {\n                \"name\": \"Westerdam\",\n                \"rating\": 4.5,\n                \"reviews\": 123,\n                \"image\": \"https://res.cloudinary.com/cruisebound/image/upload/f_auto/v1649244829/production/small_ship_main_image_190_62303d8c_3c92_448e_ad01_0a02e7eedca3_0462af156b.jpg\",\n                \"line\": {\n                    \"logo\": \"https://res.cloudinary.com/cruisebound/image/upload/f_auto/v1649730444/production/line_logo_5_ed91fe81_edf0_4cbb_a115_aa5495bbf2dc_3f0bbebc13.jpg\",\n                    \"name\": \"Holland America Line\"\n                }\n            },\n            \"itinerary\": [\n                \"Sydney, Australia\",\n                \"Eden, Australia\",\n                \"Hobart, Australia\",\n                \"Port Arthur, Australia\",\n                \"Hobart, Australia\",\n                \"Adelaide, Australia\",\n                \"Adelaide, Australia\",\n                \"Kangaroo Island, Australia\",\n                \"Melbourne, Australia\",\n                \"Phillip Island, Australia\",\n                \"Sydney, Australia\",\n                \"Melbourne, Australia\",\n                \"Hobart, Australia\",\n                \"Milford Sound, New Zealand\",\n                \"Port Chalmers (Dunedin), New Zealand\",\n                \"Lyttelton (Christchurch), New Zealand\",\n                \"Christchurch, New Zealand\",\n                \"Wellington, New Zealand\",\n                \"Napier, New Zealand\",\n                \"Tauranga, New Zealand\",\n                \"Auckland, New Zealand\"\n            ],\n            \"region\": \"Caribbean\",\n            \"departureDate\": \"2022-11-23\",\n            \"returnDate\": \"2022-12-20\",\n            \"duration\": 27\n        },\n        {\n            \"price\": 4899,\n            \"name\": \"27 Day Grand Africa Voyage\",\n            \"ship\": {\n                \"name\": \"Zaandam\",\n                \"rating\": 4.5,\n                \"reviews\": 123,\n                \"image\": \"https://res.cloudinary.com/cruisebound/image/upload/f_auto/v1649244816/production/small_ship_main_image_78_ebe46334_d549_4b9d_8265_dfeed1495e9b_ff4e1de339.jpg\",\n                \"line\": {\n                    \"logo\": \"https://res.cloudinary.com/cruisebound/image/upload/f_auto/v1649730444/production/line_logo_5_ed91fe81_edf0_4cbb_a115_aa5495bbf2dc_3f0bbebc13.jpg\",\n                    \"name\": \"Holland America Line\"\n                }\n            },\n            \"itinerary\": [\n                \"Cape Town, South Africa\",\n                \"Cape Town, South Africa\",\n                \"Luderitz, Namibia\",\n                \"Walvis Bay, Namibia\",\n                \"Luanda, Angola\",\n                \"Takoradi, Ghana\",\n                \"Abidjan, Ivory Coast\",\n                \"Banjul, Gambia\",\n                \"Praia, Cape Verde\",\n                \"Mindelo, Cape Verde Island\",\n                \"San Juan, Puerto Rico\",\n                \"Fort Lauderdale (Port Everglades), Florida\"\n            ],\n            \"region\": \"Caribbean\",\n            \"departureDate\": \"2022-11-23\",\n            \"returnDate\": \"2022-12-20\",\n            \"duration\": 27\n        },\n        {\n            \"price\": 229,\n            \"name\": \"3 Night Mediterranean Cruise\",\n            \"ship\": {\n                \"name\": \"MSC Splendida\",\n                \"rating\": 4.5,\n                \"reviews\": 123,\n                \"image\": \"https://res.cloudinary.com/cruisebound/image/upload/f_auto/v1652317985/production/small_MSC_Splendida_e1c7d86a99.jpg\",\n                \"line\": {\n                    \"logo\": \"https://res.cloudinary.com/cruisebound/image/upload/f_auto/v1649242239/production/line_logo_6_4bbd4246_eded_4690_bd5e_b184f4a64e82_0f9ac3171a.jpg\",\n                    \"name\": \"MSC Cruises\"\n                }\n            },\n            \"itinerary\": [\n                \"Jeddah, Saudi Arabia\",\n                \"Sockhna, Egypt\"\n            ],\n            \"region\": \"Caribbean\",\n            \"departureDate\": \"2022-11-23\",\n            \"returnDate\": \"2022-11-26\",\n            \"duration\": 3\n        },\n        {\n            \"price\": 319,\n            \"name\": \"7 Night Mediterranean - Western Cruise\",\n            \"ship\": {\n                \"name\": \"MSC Virtuosa\",\n                \"rating\": 4.5,\n                \"reviews\": 123,\n                \"image\": \"https://res.cloudinary.com/cruisebound/image/upload/f_auto/v1656397931/production/small_msc_vi_item_76c6c4b53c.png\",\n                \"line\": {\n                    \"logo\": \"https://res.cloudinary.com/cruisebound/image/upload/f_auto/v1649242239/production/line_logo_6_4bbd4246_eded_4690_bd5e_b184f4a64e82_0f9ac3171a.jpg\",\n                    \"name\": \"MSC Cruises\"\n                }\n            },\n            \"itinerary\": [\n                \"Naples, Italy\",\n                \"Palma de Mallorca, Spain\",\n                \"Barcelona, Spain\",\n                \"Marseille, France\",\n                \"Genoa, Italy\",\n                \"La Spezia (Cinque Terre), Italy\",\n                \"Naples, Italy\"\n            ],\n            \"region\": \"Caribbean\",\n            \"departureDate\": \"2022-11-23\",\n            \"returnDate\": \"2022-11-30\",\n            \"duration\": 7\n        },\n        {\n            \"price\": 519,\n            \"name\": \"6 Night Europe\",\n            \"ship\": {\n                \"name\": \"MSC Virtuosa\",\n                \"rating\": 4.5,\n                \"reviews\": 123,\n                \"image\": \"https://res.cloudinary.com/cruisebound/image/upload/f_auto/v1656397931/production/small_msc_vi_item_76c6c4b53c.png\",\n                \"line\": {\n                    \"logo\": \"https://res.cloudinary.com/cruisebound/image/upload/f_auto/v1649242239/production/line_logo_6_4bbd4246_eded_4690_bd5e_b184f4a64e82_0f9ac3171a.jpg\",\n                    \"name\": \"MSC Cruises\"\n                }\n            },\n            \"itinerary\": [\n                \"Rotterdam, The Netherlands\",\n                \"Le Havre (Paris), France\",\n                \"Southampton, England\",\n                \"Hamburg, Germany\",\n                \"Rotterdam, The Netherlands\"\n            ],\n            \"region\": \"Caribbean\",\n            \"departureDate\": \"2022-11-23\",\n            \"returnDate\": \"2022-11-29\",\n            \"duration\": 6\n        },\n        {\n            \"price\": 539,\n            \"name\": \"4 Night Europe\",\n            \"ship\": {\n                \"name\": \"MSC Virtuosa\",\n                \"rating\": 4.5,\n                \"reviews\": 123,\n                \"image\": \"https://res.cloudinary.com/cruisebound/image/upload/f_auto/v1656397931/production/small_msc_vi_item_76c6c4b53c.png\",\n                \"line\": {\n                    \"logo\": \"https://res.cloudinary.com/cruisebound/image/upload/f_auto/v1649242239/production/line_logo_6_4bbd4246_eded_4690_bd5e_b184f4a64e82_0f9ac3171a.jpg\",\n                    \"name\": \"MSC Cruises\"\n                }\n            },\n            \"itinerary\": [\n                \"Rotterdam, The Netherlands\",\n                \"Le Havre (Paris), France\",\n                \"Southampton, England\",\n                \"Hamburg, Germany\"\n            ],\n            \"region\": \"Caribbean\",\n            \"departureDate\": \"2022-11-23\",\n            \"returnDate\": \"2022-11-27\",\n            \"duration\": 4\n        },\n        {\n            \"price\": 1039,\n            \"name\": \"10 NIGHT Australia CRUISE\",\n            \"ship\": {\n                \"name\": \"Royal Princess\",\n                \"rating\": 4.5,\n                \"reviews\": 123,\n                \"image\": \"https://res.cloudinary.com/cruisebound/image/upload/f_auto/v1649245266/production/small_ship_main_image_308_46e37dcc_9f24_45de_9d47_6dfc1e20687f_8f6cf3bb8e.jpg\",\n                \"line\": {\n                    \"logo\": \"https://res.cloudinary.com/cruisebound/image/upload/f_auto/v1649727921/production/Princess2020_1_Line_RGB_2_Color_c23999dc2a.jpg\",\n                    \"name\": \"Princess Cruises\"\n                }\n            },\n            \"itinerary\": [\n                \"Sydney, Australia\",\n                \"Brisbane, Australia\",\n                \"Airlie Beach\",\n                \"Yorkeys Knob\",\n                \"Port Douglas, Australia\",\n                \"Willis Island\",\n                \"Sydney, Australia\"\n            ],\n            \"region\": \"Caribbean\",\n            \"departureDate\": \"2022-11-23\",\n            \"returnDate\": \"2022-12-03\",\n            \"duration\": 10\n        },\n        {\n            \"price\": 469,\n            \"name\": \"7 Night Mediterranean\",\n            \"ship\": {\n                \"name\": \"MSC Bellissima\",\n                \"rating\": 4.5,\n                \"reviews\": 123,\n                \"image\": null,\n                \"line\": {\n                    \"logo\": \"https://res.cloudinary.com/cruisebound/image/upload/f_auto/v1649242239/production/line_logo_6_4bbd4246_eded_4690_bd5e_b184f4a64e82_0f9ac3171a.jpg\",\n                    \"name\": \"MSC Cruises\"\n                }\n            },\n            \"itinerary\": [\n                \"Naples, Italy\",\n                \"Palma de Mallorca, Spain\",\n                \"Barcelona, Spain\",\n                \"Marseille, France\",\n                \"Genoa, Italy\",\n                \"La Spezia (Cinque Terre), Italy\",\n                \"Naples, Italy\"\n            ],\n            \"region\": \"Caribbean\",\n            \"departureDate\": \"2022-11-23\",\n            \"returnDate\": \"2022-11-30\",\n            \"duration\": 7\n        }\n    ]\n}"
+				}
+			]
+		},
+		{
+			"name": "Example 3 - Sort by price ascending",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/api/v1/sailings/search?sortBy=price",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"sailings",
+						"search"
+					],
+					"query": [
+						{
+							"key": "sortBy",
+							"value": "price"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Example 3 - Sort by price ascending",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/api/v1/sailings/search?sortBy=price",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"sailings",
+								"search"
+							],
+							"query": [
+								{
+									"key": "sortBy",
+									"value": "price"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 20 Feb 2023 18:28:36 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"totalResults\": 100,\n    \"totalPages\": 10,\n    \"currentPage\": 1,\n    \"results\": [\n        {\n            \"price\": 149,\n            \"name\": \"6 Night Europe\",\n            \"ship\": {\n                \"name\": \"MSC Virtuosa\",\n                \"rating\": 4.5,\n                \"reviews\": 123,\n                \"image\": \"https://res.cloudinary.com/cruisebound/image/upload/f_auto/v1656397931/production/small_msc_vi_item_76c6c4b53c.png\",\n                \"line\": {\n                    \"logo\": \"https://res.cloudinary.com/cruisebound/image/upload/f_auto/v1649242239/production/line_logo_6_4bbd4246_eded_4690_bd5e_b184f4a64e82_0f9ac3171a.jpg\",\n                    \"name\": \"MSC Cruises\"\n                }\n            },\n            \"itinerary\": [\n                \"Hamburg, Germany\",\n                \"Rotterdam, The Netherlands\",\n                \"Le Havre (Paris), France\",\n                \"Southampton, England\",\n                \"Hamburg, Germany\"\n            ],\n            \"region\": \"Caribbean\",\n            \"departureDate\": \"2022-11-21\",\n            \"returnDate\": \"2022-11-27\",\n            \"duration\": 6\n        },\n        {\n            \"price\": 199,\n            \"name\": \"4 Night Mediterranean Cruise\",\n            \"ship\": {\n                \"name\": \"MSC Splendida\",\n                \"rating\": 4.5,\n                \"reviews\": 123,\n                \"image\": \"https://res.cloudinary.com/cruisebound/image/upload/f_auto/v1652317985/production/small_MSC_Splendida_e1c7d86a99.jpg\",\n                \"line\": {\n                    \"logo\": \"https://res.cloudinary.com/cruisebound/image/upload/f_auto/v1649242239/production/line_logo_6_4bbd4246_eded_4690_bd5e_b184f4a64e82_0f9ac3171a.jpg\",\n                    \"name\": \"MSC Cruises\"\n                }\n            },\n            \"itinerary\": [\n                \"Sockhna, Egypt\",\n                \"Safaga (Luxor, Karnak), Egypt\",\n                \"Aqaba, Jordan\",\n                \"Jeddah, Saudi Arabia\"\n            ],\n            \"region\": \"Caribbean\",\n            \"departureDate\": \"2022-11-26\",\n            \"returnDate\": \"2022-11-30\",\n            \"duration\": 4\n        },\n        {\n            \"price\": 229,\n            \"name\": \"3 Night Mediterranean Cruise\",\n            \"ship\": {\n                \"name\": \"MSC Splendida\",\n                \"rating\": 4.5,\n                \"reviews\": 123,\n                \"image\": \"https://res.cloudinary.com/cruisebound/image/upload/f_auto/v1652317985/production/small_MSC_Splendida_e1c7d86a99.jpg\",\n                \"line\": {\n                    \"logo\": \"https://res.cloudinary.com/cruisebound/image/upload/f_auto/v1649242239/production/line_logo_6_4bbd4246_eded_4690_bd5e_b184f4a64e82_0f9ac3171a.jpg\",\n                    \"name\": \"MSC Cruises\"\n                }\n            },\n            \"itinerary\": [\n                \"Jeddah, Saudi Arabia\",\n                \"Sockhna, Egypt\"\n            ],\n            \"region\": \"Caribbean\",\n            \"departureDate\": \"2022-11-23\",\n            \"returnDate\": \"2022-11-26\",\n            \"duration\": 3\n        },\n        {\n            \"price\": 249,\n            \"name\": \"7 Night Europe\",\n            \"ship\": {\n                \"name\": \"MSC Virtuosa\",\n                \"rating\": 4.5,\n                \"reviews\": 123,\n                \"image\": \"https://res.cloudinary.com/cruisebound/image/upload/f_auto/v1656397931/production/small_msc_vi_item_76c6c4b53c.png\",\n                \"line\": {\n                    \"logo\": \"https://res.cloudinary.com/cruisebound/image/upload/f_auto/v1649242239/production/line_logo_6_4bbd4246_eded_4690_bd5e_b184f4a64e82_0f9ac3171a.jpg\",\n                    \"name\": \"MSC Cruises\"\n                }\n            },\n            \"itinerary\": [\n                \"Le Havre (Paris), France\",\n                \"Southampton, England\",\n                \"Hamburg, Germany\",\n                \"Rotterdam, The Netherlands\",\n                \"Zeebrugge (Bruges), Belgium\",\n                \"Le Havre (Paris), France\"\n            ],\n            \"region\": \"Caribbean\",\n            \"departureDate\": \"2022-11-24\",\n            \"returnDate\": \"2022-12-01\",\n            \"duration\": 7\n        },\n        {\n            \"price\": 249,\n            \"name\": \"7 Night Europe\",\n            \"ship\": {\n                \"name\": \"MSC Virtuosa\",\n                \"rating\": 4.5,\n                \"reviews\": 123,\n                \"image\": \"https://res.cloudinary.com/cruisebound/image/upload/f_auto/v1656397931/production/small_msc_vi_item_76c6c4b53c.png\",\n                \"line\": {\n                    \"logo\": \"https://res.cloudinary.com/cruisebound/image/upload/f_auto/v1649242239/production/line_logo_6_4bbd4246_eded_4690_bd5e_b184f4a64e82_0f9ac3171a.jpg\",\n                    \"name\": \"MSC Cruises\"\n                }\n            },\n            \"itinerary\": [\n                \"Hamburg, Germany\",\n                \"Rotterdam, The Netherlands\",\n                \"Zeebrugge (Bruges), Belgium\",\n                \"Le Havre (Paris), France\",\n                \"Southampton, England\",\n                \"Hamburg, Germany\"\n            ],\n            \"region\": \"Caribbean\",\n            \"departureDate\": \"2022-11-27\",\n            \"returnDate\": \"2022-12-04\",\n            \"duration\": 7\n        },\n        {\n            \"price\": 249,\n            \"name\": \"7 Night Europe\",\n            \"ship\": {\n                \"name\": \"MSC Virtuosa\",\n                \"rating\": 4.5,\n                \"reviews\": 123,\n                \"image\": \"https://res.cloudinary.com/cruisebound/image/upload/f_auto/v1656397931/production/small_msc_vi_item_76c6c4b53c.png\",\n                \"line\": {\n                    \"logo\": \"https://res.cloudinary.com/cruisebound/image/upload/f_auto/v1649242239/production/line_logo_6_4bbd4246_eded_4690_bd5e_b184f4a64e82_0f9ac3171a.jpg\",\n                    \"name\": \"MSC Cruises\"\n                }\n            },\n            \"itinerary\": [\n                \"Southampton, England\",\n                \"Hamburg, Germany\",\n                \"Rotterdam, The Netherlands\",\n                \"Zeebrugge (Bruges), Belgium\",\n                \"Le Havre (Paris), France\",\n                \"Southampton, England\"\n            ],\n            \"region\": \"Caribbean\",\n            \"departureDate\": \"2022-11-25\",\n            \"returnDate\": \"2022-12-02\",\n            \"duration\": 7\n        },\n        {\n            \"price\": 249,\n            \"name\": \"7 Night Mediterranean - Western Cruise\",\n            \"ship\": {\n                \"name\": \"MSC Virtuosa\",\n                \"rating\": 4.5,\n                \"reviews\": 123,\n                \"image\": \"https://res.cloudinary.com/cruisebound/image/upload/f_auto/v1656397931/production/small_msc_vi_item_76c6c4b53c.png\",\n                \"line\": {\n                    \"logo\": \"https://res.cloudinary.com/cruisebound/image/upload/f_auto/v1649242239/production/line_logo_6_4bbd4246_eded_4690_bd5e_b184f4a64e82_0f9ac3171a.jpg\",\n                    \"name\": \"MSC Cruises\"\n                }\n            },\n            \"itinerary\": [\n                \"Palma de Mallorca, Spain\",\n                \"Barcelona, Spain\",\n                \"Marseille, France\",\n                \"Genoa, Italy\",\n                \"La Spezia (Cinque Terre), Italy\",\n                \"Naples, Italy\",\n                \"Palma de Mallorca, Spain\"\n            ],\n            \"region\": \"Caribbean\",\n            \"departureDate\": \"2022-11-25\",\n            \"returnDate\": \"2022-12-02\",\n            \"duration\": 7\n        },\n        {\n            \"price\": 268,\n            \"name\": \"4 Night Bahamas & Perfect Day Cruise\",\n            \"ship\": {\n                \"name\": \"Liberty Of The Seas\",\n                \"rating\": 4.5,\n                \"reviews\": 123,\n                \"image\": \"https://res.cloudinary.com/cruisebound/image/upload/f_auto/v1653676455/production/small_lots_6257ed50cc.jpg\",\n                \"line\": {\n                    \"logo\": \"https://res.cloudinary.com/cruisebound/image/upload/f_auto/v1650047283/production/Royal_Caribbean_Logo_7bf92b5951.jpg\",\n                    \"name\": \"Royal Caribbean International\"\n                }\n            },\n            \"itinerary\": [\n                \"Fort Lauderdale (Port Everglades), Florida\",\n                \"Perfect Day at CocoCay\",\n                \"Nassau, Bahamas\",\n                \"Fort Lauderdale (Port Everglades), Florida\"\n            ],\n            \"region\": \"Caribbean\",\n            \"departureDate\": \"2022-11-21\",\n            \"returnDate\": \"2022-11-25\",\n            \"duration\": 4\n        },\n        {\n            \"price\": 279,\n            \"name\": \"3 Night Bahamas\",\n            \"ship\": {\n                \"name\": \"Norwegian Sky\",\n                \"rating\": 4.5,\n                \"reviews\": 123,\n                \"image\": \"https://res.cloudinary.com/cruisebound/image/upload/f_auto/v1649244883/production/small_ship_main_image_173_75f0e94c_1a28_4aa9_bef7_502bebea0413_cccfda987a.jpg\",\n                \"line\": {\n                    \"logo\": \"https://res.cloudinary.com/cruisebound/image/upload/f_auto/v1649730379/production/line_logo_4_539b0d9d_8661_4556_810e_da0ac33c1aac_1820d6dc08.png\",\n                    \"name\": \"Norwegian Cruise Line\"\n                }\n            },\n            \"itinerary\": [\n                \"Miami, Florida\",\n                \"Great Stirrup Cay, Bahamas\",\n                \"Nassau, Bahamas\",\n                \"Miami, Florida\"\n            ],\n            \"region\": \"Caribbean\",\n            \"departureDate\": \"2022-11-25\",\n            \"returnDate\": \"2022-11-28\",\n            \"duration\": 3\n        },\n        {\n            \"price\": 319,\n            \"name\": \"7 Night Mediterranean - Western Cruise\",\n            \"ship\": {\n                \"name\": \"MSC Virtuosa\",\n                \"rating\": 4.5,\n                \"reviews\": 123,\n                \"image\": \"https://res.cloudinary.com/cruisebound/image/upload/f_auto/v1656397931/production/small_msc_vi_item_76c6c4b53c.png\",\n                \"line\": {\n                    \"logo\": \"https://res.cloudinary.com/cruisebound/image/upload/f_auto/v1649242239/production/line_logo_6_4bbd4246_eded_4690_bd5e_b184f4a64e82_0f9ac3171a.jpg\",\n                    \"name\": \"MSC Cruises\"\n                }\n            },\n            \"itinerary\": [\n                \"Barcelona, Spain\",\n                \"Marseille, France\",\n                \"Genoa, Italy\",\n                \"La Spezia (Cinque Terre), Italy\",\n                \"Naples, Italy\",\n                \"Palma de Mallorca, Spain\",\n                \"Barcelona, Spain\"\n            ],\n            \"region\": \"Caribbean\",\n            \"departureDate\": \"2022-11-26\",\n            \"returnDate\": \"2022-12-03\",\n            \"duration\": 7\n        }\n    ]\n}"
+				}
+			]
+		},
+		{
+			"name": "Example 4 - Sort by price descending",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/api/v1/sailings/search?sortBy=price&sortOrder=desc",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"sailings",
+						"search"
+					],
+					"query": [
+						{
+							"key": "sortBy",
+							"value": "price"
+						},
+						{
+							"key": "sortOrder",
+							"value": "desc"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Example 4 - Sort by price descending",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/api/v1/sailings/search?sortBy=price&sortOrder=desc",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"sailings",
+								"search"
+							],
+							"query": [
+								{
+									"key": "sortBy",
+									"value": "price"
+								},
+								{
+									"key": "sortOrder",
+									"value": "desc"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 20 Feb 2023 18:28:42 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"totalResults\": 100,\n    \"totalPages\": 10,\n    \"currentPage\": 1,\n    \"results\": [\n        {\n            \"price\": 8554,\n            \"name\": \"21 Day Atlantic & Caribbean Gems\",\n            \"ship\": {\n                \"name\": \"Seabourn Ovation\",\n                \"rating\": 4.5,\n                \"reviews\": 123,\n                \"image\": \"https://res.cloudinary.com/cruisebound/image/upload/f_auto/v1649245856/production/small_ship_main_image_1368942_c85b109e_2e11_44d1_9278_2c12bb183571_114f7b2c75.webp\",\n                \"line\": {\n                    \"logo\": null,\n                    \"name\": \"Seabourn Cruise Line\"\n                }\n            },\n            \"itinerary\": [\n                \"Lisbon, Portugal\",\n                \"Funchal, Madeira, Portugal\",\n                \"St. John's, Antigua\",\n                \"Port of Basseterre, St. Kitts, St. Kitts and Nevis\",\n                \"Fort-de-France, Martinique\",\n                \"Bridgetown, Barbados\",\n                \"Rodney Bay, St. Lucia\",\n                \"Roseau, Dominica\",\n                \"Port of Basseterre, St. Kitts, St. Kitts and Nevis\",\n                \"Trois Ilets, Martinique\",\n                \"St. Georges, Grenada, West Indies\",\n                \"Bridgetown, Barbados\"\n            ],\n            \"region\": \"Caribbean\",\n            \"departureDate\": \"2022-11-26\",\n            \"returnDate\": \"2022-12-17\",\n            \"duration\": 21\n        },\n        {\n            \"price\": 8554,\n            \"name\": \"21 Day Atlantic & Caribbean Gems\",\n            \"ship\": {\n                \"name\": \"Seabourn Ovation\",\n                \"rating\": 4.5,\n                \"reviews\": 123,\n                \"image\": \"https://res.cloudinary.com/cruisebound/image/upload/f_auto/v1649245856/production/small_ship_main_image_1368942_c85b109e_2e11_44d1_9278_2c12bb183571_114f7b2c75.webp\",\n                \"line\": {\n                    \"logo\": null,\n                    \"name\": \"Seabourn Cruise Line\"\n                }\n            },\n            \"itinerary\": [\n                \"Lisbon, Portugal\",\n                \"Funchal, Madeira, Portugal\",\n                \"St. John's, Antigua\",\n                \"Port of Basseterre, St. Kitts, St. Kitts and Nevis\",\n                \"Fort-de-France, Martinique\",\n                \"Bridgetown, Barbados\",\n                \"Rodney Bay, St. Lucia\",\n                \"Roseau, Dominica\",\n                \"Port of Basseterre, St. Kitts, St. Kitts and Nevis\",\n                \"Trois Ilets, Martinique\",\n                \"St. Georges, Grenada, West Indies\",\n                \"Bridgetown, Barbados\"\n            ],\n            \"region\": \"Caribbean\",\n            \"departureDate\": \"2022-11-26\",\n            \"returnDate\": \"2022-12-17\",\n            \"duration\": 21\n        },\n        {\n            \"price\": 7306,\n            \"name\": \"7 Night Galapagos Southern Loop\",\n            \"ship\": {\n                \"name\": \"Celebrity Xploration\",\n                \"rating\": 4.5,\n                \"reviews\": 123,\n                \"image\": \"https://res.cloudinary.com/cruisebound/image/upload/f_auto/v1652294316/production/small_Celebrity_Xploration_09ff8b8f4b.jpg\",\n                \"line\": {\n                    \"logo\": \"https://res.cloudinary.com/cruisebound/image/upload/f_auto/v1649730675/production/line_logo_8_e6f7e3f5_ddda_4cc2_b64a_31034e383c06_27c94556ac.png\",\n                    \"name\": \"Celebrity Cruises\"\n                }\n            },\n            \"itinerary\": [\n                \"Isla Baltra, Galapagos Islands\",\n                \"Mosquera Islet, Galapagos\",\n                \"Isla Rabida, Galapagos Islands\",\n                \"Dragon Hill (santa Cruz), Galapagos Islands\",\n                \"Isla Isabela (Caleta Tagus), Galapagos Islands\",\n                \"Isla Isabela (Caleta Tagus), Galapagos Islands\",\n                \"Galapagos Islands, Ecuador\",\n                \"Cormorant Point (Floreana), Galapagos Islands\",\n                \"San Cristobal, Galapagos Islands\",\n                \"Galapagos Islands, Ecuador\",\n                \"Galapagos Islands, Ecuador\",\n                \"Puerto Ayora, Galapagos Islands\",\n                \"Espanola (Hood) Island, Ecuador\",\n                \"Punta Suarez, Galapagos Islands\",\n                \"Isla Baltra, Galapagos Islands\",\n                \"Daphne Island (galapagos)\"\n            ],\n            \"region\": \"Caribbean\",\n            \"departureDate\": \"2022-11-26\",\n            \"returnDate\": \"2022-12-03\",\n            \"duration\": 7\n        },\n        {\n            \"price\": 7306,\n            \"name\": \"7 Night Galapagos Southern Loop\",\n            \"ship\": {\n                \"name\": \"Celebrity Xploration\",\n                \"rating\": 4.5,\n                \"reviews\": 123,\n                \"image\": \"https://res.cloudinary.com/cruisebound/image/upload/f_auto/v1652294316/production/small_Celebrity_Xploration_09ff8b8f4b.jpg\",\n                \"line\": {\n                    \"logo\": \"https://res.cloudinary.com/cruisebound/image/upload/f_auto/v1649730675/production/line_logo_8_e6f7e3f5_ddda_4cc2_b64a_31034e383c06_27c94556ac.png\",\n                    \"name\": \"Celebrity Cruises\"\n                }\n            },\n            \"itinerary\": [\n                \"Mosquera Islet, Galapagos\",\n                \"Isla Baltra, Galapagos Islands\",\n                \"Dragon Hill (santa Cruz), Galapagos Islands\",\n                \"Isla Rabida, Galapagos Islands\",\n                \"Isla Isabela (Caleta Tagus), Galapagos Islands\",\n                \"Isla Isabela (Caleta Tagus), Galapagos Islands\",\n                \"Cormorant Point (Floreana), Galapagos Islands\",\n                \"Galapagos Islands, Ecuador\",\n                \"San Cristobal, Galapagos Islands\",\n                \"Galapagos Islands, Ecuador\",\n                \"Galapagos Islands, Ecuador\",\n                \"Puerto Ayora, Galapagos Islands\",\n                \"Punta Suarez, Galapagos Islands\",\n                \"Espanola (Hood) Island, Ecuador\",\n                \"Isla Baltra, Galapagos Islands\",\n                \"Daphne Island (galapagos)\"\n            ],\n            \"region\": \"Caribbean\",\n            \"departureDate\": \"2022-11-26\",\n            \"returnDate\": \"2022-12-03\",\n            \"duration\": 7\n        },\n        {\n            \"price\": 6109,\n            \"name\": \"14 Day Panama Canal Quest\",\n            \"ship\": {\n                \"name\": \"Seabourn Quest\",\n                \"rating\": 4.5,\n                \"reviews\": 123,\n                \"image\": \"https://res.cloudinary.com/cruisebound/image/upload/f_auto/v1666891283/production/small_Seabourn_Quest_ship_f0ff13e8c3.webp\",\n                \"line\": {\n                    \"logo\": null,\n                    \"name\": \"Seabourn Cruise Line\"\n                }\n            },\n            \"itinerary\": [],\n            \"region\": \"Caribbean\",\n            \"departureDate\": \"2022-11-25\",\n            \"returnDate\": \"2022-12-09\",\n            \"duration\": 14\n        },\n        {\n            \"price\": 5709,\n            \"name\": \"14 Day Crossing To The Caribbean\",\n            \"ship\": {\n                \"name\": \"Seabourn Ovation\",\n                \"rating\": 4.5,\n                \"reviews\": 123,\n                \"image\": \"https://res.cloudinary.com/cruisebound/image/upload/f_auto/v1649245856/production/small_ship_main_image_1368942_c85b109e_2e11_44d1_9278_2c12bb183571_114f7b2c75.webp\",\n                \"line\": {\n                    \"logo\": null,\n                    \"name\": \"Seabourn Cruise Line\"\n                }\n            },\n            \"itinerary\": [\n                \"Lisbon, Portugal\",\n                \"Funchal, Madeira, Portugal\",\n                \"St. John's, Antigua\",\n                \"Port of Basseterre, St. Kitts, St. Kitts and Nevis\",\n                \"Pointe-a-Pitre, Guadeloupe\",\n                \"Fort-de-France, Martinique\",\n                \"Bridgetown, Barbados\"\n            ],\n            \"region\": \"Caribbean\",\n            \"departureDate\": \"2022-11-26\",\n            \"returnDate\": \"2022-12-10\",\n            \"duration\": 14\n        },\n        {\n            \"price\": 5709,\n            \"name\": \"14 Day Crossing To The Caribbean\",\n            \"ship\": {\n                \"name\": \"Seabourn Ovation\",\n                \"rating\": 4.5,\n                \"reviews\": 123,\n                \"image\": \"https://res.cloudinary.com/cruisebound/image/upload/f_auto/v1649245856/production/small_ship_main_image_1368942_c85b109e_2e11_44d1_9278_2c12bb183571_114f7b2c75.webp\",\n                \"line\": {\n                    \"logo\": null,\n                    \"name\": \"Seabourn Cruise Line\"\n                }\n            },\n            \"itinerary\": [\n                \"Lisbon, Portugal\",\n                \"Funchal, Madeira, Portugal\",\n                \"St. John's, Antigua\",\n                \"Port of Basseterre, St. Kitts, St. Kitts and Nevis\",\n                \"Pointe-a-Pitre, Guadeloupe\",\n                \"Fort-de-France, Martinique\",\n                \"Bridgetown, Barbados\"\n            ],\n            \"region\": \"Caribbean\",\n            \"departureDate\": \"2022-11-26\",\n            \"returnDate\": \"2022-12-10\",\n            \"duration\": 14\n        },\n        {\n            \"price\": 4899,\n            \"name\": \"27 Day Grand Africa Voyage\",\n            \"ship\": {\n                \"name\": \"Zaandam\",\n                \"rating\": 4.5,\n                \"reviews\": 123,\n                \"image\": \"https://res.cloudinary.com/cruisebound/image/upload/f_auto/v1649244816/production/small_ship_main_image_78_ebe46334_d549_4b9d_8265_dfeed1495e9b_ff4e1de339.jpg\",\n                \"line\": {\n                    \"logo\": \"https://res.cloudinary.com/cruisebound/image/upload/f_auto/v1649730444/production/line_logo_5_ed91fe81_edf0_4cbb_a115_aa5495bbf2dc_3f0bbebc13.jpg\",\n                    \"name\": \"Holland America Line\"\n                }\n            },\n            \"itinerary\": [\n                \"Cape Town, South Africa\",\n                \"Cape Town, South Africa\",\n                \"Luderitz, Namibia\",\n                \"Walvis Bay, Namibia\",\n                \"Luanda, Angola\",\n                \"Takoradi, Ghana\",\n                \"Abidjan, Ivory Coast\",\n                \"Banjul, Gambia\",\n                \"Praia, Cape Verde\",\n                \"Mindelo, Cape Verde Island\",\n                \"San Juan, Puerto Rico\",\n                \"Fort Lauderdale (Port Everglades), Florida\"\n            ],\n            \"region\": \"Caribbean\",\n            \"departureDate\": \"2022-11-23\",\n            \"returnDate\": \"2022-12-20\",\n            \"duration\": 27\n        },\n        {\n            \"price\": 4499,\n            \"name\": \"21 Night Australia Cruise\",\n            \"ship\": {\n                \"name\": \"Regatta\",\n                \"rating\": 4.5,\n                \"reviews\": 123,\n                \"image\": \"https://res.cloudinary.com/cruisebound/image/upload/f_auto/v1651593274/production/small_ship_main_image_167_b9950b9e_670a_42d1_bdee_4ea7a0fa87de_f05d4afff4_8821e097c8.jpg\",\n                \"line\": {\n                    \"logo\": \"https://res.cloudinary.com/cruisebound/image/upload/f_auto/v1649729888/production/line_logo_1_82665b60_d05e_447f_87ee_2bca91dd0edf_64a5ad8717.jpg\",\n                    \"name\": \"Oceania Cruises\"\n                }\n            },\n            \"itinerary\": [\n                \"Singapore, Singapore\",\n                \"Semarang, Java, Indonesia\",\n                \"Bali, Indonesia\",\n                \"Bali, Indonesia\",\n                \"Broome, Australia\",\n                \"Perth (Fremantle), Australia\",\n                \"Perth (Fremantle), Australia\",\n                \"Busselton, Australia\",\n                \"PENNESHAW (KANGAROO ISLAND), Australia\",\n                \"Adelaide, Australia\",\n                \"Melbourne, Australia\",\n                \"Burnie, Tasmania\",\n                \"Sydney, Australia\"\n            ],\n            \"region\": \"Caribbean\",\n            \"departureDate\": \"2022-11-21\",\n            \"returnDate\": \"2022-12-12\",\n            \"duration\": 21\n        },\n        {\n            \"price\": 4499,\n            \"name\": \"21 Night Australia Cruise\",\n            \"ship\": {\n                \"name\": \"Regatta\",\n                \"rating\": 4.5,\n                \"reviews\": 123,\n                \"image\": \"https://res.cloudinary.com/cruisebound/image/upload/f_auto/v1651593274/production/small_ship_main_image_167_b9950b9e_670a_42d1_bdee_4ea7a0fa87de_f05d4afff4_8821e097c8.jpg\",\n                \"line\": {\n                    \"logo\": \"https://res.cloudinary.com/cruisebound/image/upload/f_auto/v1649729888/production/line_logo_1_82665b60_d05e_447f_87ee_2bca91dd0edf_64a5ad8717.jpg\",\n                    \"name\": \"Oceania Cruises\"\n                }\n            },\n            \"itinerary\": [\n                \"Singapore, Singapore\",\n                \"Semarang, Java, Indonesia\",\n                \"Bali, Indonesia\",\n                \"Bali, Indonesia\",\n                \"Broome, Australia\",\n                \"Perth (Fremantle), Australia\",\n                \"Perth (Fremantle), Australia\",\n                \"Busselton, Australia\",\n                \"PENNESHAW (KANGAROO ISLAND), Australia\",\n                \"Adelaide, Australia\",\n                \"Melbourne, Australia\",\n                \"Burnie, Tasmania\",\n                \"Sydney, Australia\"\n            ],\n            \"region\": \"Caribbean\",\n            \"departureDate\": \"2022-11-21\",\n            \"returnDate\": \"2022-12-12\",\n            \"duration\": 21\n        }\n    ]\n}"
+				}
+			]
+		},
+		{
+			"name": "Example 5 - Filter by departureDate: Sort by price descending",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/api/v1/sailings/search?sortBy=price&sortOrder=desc&departureDate=2022-11-26",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"sailings",
+						"search"
+					],
+					"query": [
+						{
+							"key": "sortBy",
+							"value": "price"
+						},
+						{
+							"key": "sortOrder",
+							"value": "desc"
+						},
+						{
+							"key": "departureDate",
+							"value": "2022-11-26"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Example 5 - Filter by departureDate: Sort by price descending",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/api/v1/sailings/search?sortBy=price&sortOrder=desc&departureDate=2022-11-26",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"sailings",
+								"search"
+							],
+							"query": [
+								{
+									"key": "sortBy",
+									"value": "price"
+								},
+								{
+									"key": "sortOrder",
+									"value": "desc"
+								},
+								{
+									"key": "departureDate",
+									"value": "2022-11-26"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 20 Feb 2023 18:28:47 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"totalResults\": 34,\n    \"totalPages\": 4,\n    \"currentPage\": 1,\n    \"results\": [\n        {\n            \"price\": 8554,\n            \"name\": \"21 Day Atlantic & Caribbean Gems\",\n            \"ship\": {\n                \"name\": \"Seabourn Ovation\",\n                \"rating\": 4.5,\n                \"reviews\": 123,\n                \"image\": \"https://res.cloudinary.com/cruisebound/image/upload/f_auto/v1649245856/production/small_ship_main_image_1368942_c85b109e_2e11_44d1_9278_2c12bb183571_114f7b2c75.webp\",\n                \"line\": {\n                    \"logo\": null,\n                    \"name\": \"Seabourn Cruise Line\"\n                }\n            },\n            \"itinerary\": [\n                \"Lisbon, Portugal\",\n                \"Funchal, Madeira, Portugal\",\n                \"St. John's, Antigua\",\n                \"Port of Basseterre, St. Kitts, St. Kitts and Nevis\",\n                \"Fort-de-France, Martinique\",\n                \"Bridgetown, Barbados\",\n                \"Rodney Bay, St. Lucia\",\n                \"Roseau, Dominica\",\n                \"Port of Basseterre, St. Kitts, St. Kitts and Nevis\",\n                \"Trois Ilets, Martinique\",\n                \"St. Georges, Grenada, West Indies\",\n                \"Bridgetown, Barbados\"\n            ],\n            \"region\": \"Caribbean\",\n            \"departureDate\": \"2022-11-26\",\n            \"returnDate\": \"2022-12-17\",\n            \"duration\": 21\n        },\n        {\n            \"price\": 8554,\n            \"name\": \"21 Day Atlantic & Caribbean Gems\",\n            \"ship\": {\n                \"name\": \"Seabourn Ovation\",\n                \"rating\": 4.5,\n                \"reviews\": 123,\n                \"image\": \"https://res.cloudinary.com/cruisebound/image/upload/f_auto/v1649245856/production/small_ship_main_image_1368942_c85b109e_2e11_44d1_9278_2c12bb183571_114f7b2c75.webp\",\n                \"line\": {\n                    \"logo\": null,\n                    \"name\": \"Seabourn Cruise Line\"\n                }\n            },\n            \"itinerary\": [\n                \"Lisbon, Portugal\",\n                \"Funchal, Madeira, Portugal\",\n                \"St. John's, Antigua\",\n                \"Port of Basseterre, St. Kitts, St. Kitts and Nevis\",\n                \"Fort-de-France, Martinique\",\n                \"Bridgetown, Barbados\",\n                \"Rodney Bay, St. Lucia\",\n                \"Roseau, Dominica\",\n                \"Port of Basseterre, St. Kitts, St. Kitts and Nevis\",\n                \"Trois Ilets, Martinique\",\n                \"St. Georges, Grenada, West Indies\",\n                \"Bridgetown, Barbados\"\n            ],\n            \"region\": \"Caribbean\",\n            \"departureDate\": \"2022-11-26\",\n            \"returnDate\": \"2022-12-17\",\n            \"duration\": 21\n        },\n        {\n            \"price\": 7306,\n            \"name\": \"7 Night Galapagos Southern Loop\",\n            \"ship\": {\n                \"name\": \"Celebrity Xploration\",\n                \"rating\": 4.5,\n                \"reviews\": 123,\n                \"image\": \"https://res.cloudinary.com/cruisebound/image/upload/f_auto/v1652294316/production/small_Celebrity_Xploration_09ff8b8f4b.jpg\",\n                \"line\": {\n                    \"logo\": \"https://res.cloudinary.com/cruisebound/image/upload/f_auto/v1649730675/production/line_logo_8_e6f7e3f5_ddda_4cc2_b64a_31034e383c06_27c94556ac.png\",\n                    \"name\": \"Celebrity Cruises\"\n                }\n            },\n            \"itinerary\": [\n                \"Mosquera Islet, Galapagos\",\n                \"Isla Baltra, Galapagos Islands\",\n                \"Dragon Hill (santa Cruz), Galapagos Islands\",\n                \"Isla Rabida, Galapagos Islands\",\n                \"Isla Isabela (Caleta Tagus), Galapagos Islands\",\n                \"Isla Isabela (Caleta Tagus), Galapagos Islands\",\n                \"Cormorant Point (Floreana), Galapagos Islands\",\n                \"Galapagos Islands, Ecuador\",\n                \"San Cristobal, Galapagos Islands\",\n                \"Galapagos Islands, Ecuador\",\n                \"Galapagos Islands, Ecuador\",\n                \"Puerto Ayora, Galapagos Islands\",\n                \"Punta Suarez, Galapagos Islands\",\n                \"Espanola (Hood) Island, Ecuador\",\n                \"Isla Baltra, Galapagos Islands\",\n                \"Daphne Island (galapagos)\"\n            ],\n            \"region\": \"Caribbean\",\n            \"departureDate\": \"2022-11-26\",\n            \"returnDate\": \"2022-12-03\",\n            \"duration\": 7\n        },\n        {\n            \"price\": 7306,\n            \"name\": \"7 Night Galapagos Southern Loop\",\n            \"ship\": {\n                \"name\": \"Celebrity Xploration\",\n                \"rating\": 4.5,\n                \"reviews\": 123,\n                \"image\": \"https://res.cloudinary.com/cruisebound/image/upload/f_auto/v1652294316/production/small_Celebrity_Xploration_09ff8b8f4b.jpg\",\n                \"line\": {\n                    \"logo\": \"https://res.cloudinary.com/cruisebound/image/upload/f_auto/v1649730675/production/line_logo_8_e6f7e3f5_ddda_4cc2_b64a_31034e383c06_27c94556ac.png\",\n                    \"name\": \"Celebrity Cruises\"\n                }\n            },\n            \"itinerary\": [\n                \"Isla Baltra, Galapagos Islands\",\n                \"Mosquera Islet, Galapagos\",\n                \"Isla Rabida, Galapagos Islands\",\n                \"Dragon Hill (santa Cruz), Galapagos Islands\",\n                \"Isla Isabela (Caleta Tagus), Galapagos Islands\",\n                \"Isla Isabela (Caleta Tagus), Galapagos Islands\",\n                \"Galapagos Islands, Ecuador\",\n                \"Cormorant Point (Floreana), Galapagos Islands\",\n                \"San Cristobal, Galapagos Islands\",\n                \"Galapagos Islands, Ecuador\",\n                \"Galapagos Islands, Ecuador\",\n                \"Puerto Ayora, Galapagos Islands\",\n                \"Espanola (Hood) Island, Ecuador\",\n                \"Punta Suarez, Galapagos Islands\",\n                \"Isla Baltra, Galapagos Islands\",\n                \"Daphne Island (galapagos)\"\n            ],\n            \"region\": \"Caribbean\",\n            \"departureDate\": \"2022-11-26\",\n            \"returnDate\": \"2022-12-03\",\n            \"duration\": 7\n        },\n        {\n            \"price\": 5709,\n            \"name\": \"14 Day Crossing To The Caribbean\",\n            \"ship\": {\n                \"name\": \"Seabourn Ovation\",\n                \"rating\": 4.5,\n                \"reviews\": 123,\n                \"image\": \"https://res.cloudinary.com/cruisebound/image/upload/f_auto/v1649245856/production/small_ship_main_image_1368942_c85b109e_2e11_44d1_9278_2c12bb183571_114f7b2c75.webp\",\n                \"line\": {\n                    \"logo\": null,\n                    \"name\": \"Seabourn Cruise Line\"\n                }\n            },\n            \"itinerary\": [\n                \"Lisbon, Portugal\",\n                \"Funchal, Madeira, Portugal\",\n                \"St. John's, Antigua\",\n                \"Port of Basseterre, St. Kitts, St. Kitts and Nevis\",\n                \"Pointe-a-Pitre, Guadeloupe\",\n                \"Fort-de-France, Martinique\",\n                \"Bridgetown, Barbados\"\n            ],\n            \"region\": \"Caribbean\",\n            \"departureDate\": \"2022-11-26\",\n            \"returnDate\": \"2022-12-10\",\n            \"duration\": 14\n        },\n        {\n            \"price\": 5709,\n            \"name\": \"14 Day Crossing To The Caribbean\",\n            \"ship\": {\n                \"name\": \"Seabourn Ovation\",\n                \"rating\": 4.5,\n                \"reviews\": 123,\n                \"image\": \"https://res.cloudinary.com/cruisebound/image/upload/f_auto/v1649245856/production/small_ship_main_image_1368942_c85b109e_2e11_44d1_9278_2c12bb183571_114f7b2c75.webp\",\n                \"line\": {\n                    \"logo\": null,\n                    \"name\": \"Seabourn Cruise Line\"\n                }\n            },\n            \"itinerary\": [\n                \"Lisbon, Portugal\",\n                \"Funchal, Madeira, Portugal\",\n                \"St. John's, Antigua\",\n                \"Port of Basseterre, St. Kitts, St. Kitts and Nevis\",\n                \"Pointe-a-Pitre, Guadeloupe\",\n                \"Fort-de-France, Martinique\",\n                \"Bridgetown, Barbados\"\n            ],\n            \"region\": \"Caribbean\",\n            \"departureDate\": \"2022-11-26\",\n            \"returnDate\": \"2022-12-10\",\n            \"duration\": 14\n        },\n        {\n            \"price\": 1899,\n            \"name\": \"14 Night India & Sri Lanka Voyage\",\n            \"ship\": {\n                \"name\": \"Azamara Quest\",\n                \"rating\": 4.5,\n                \"reviews\": 123,\n                \"image\": \"https://res.cloudinary.com/cruisebound/image/upload/f_auto/v1660236470/production/small_azamara_quest_6bcb574fe4.jpg\",\n                \"line\": {\n                    \"logo\": \"https://res.cloudinary.com/cruisebound/image/upload/f_auto/v1650047597/production/19_aza_logo_sm_rgb_horizontal_orig_03bba7fde7.jpg\",\n                    \"name\": \"Azamara\"\n                }\n            },\n            \"itinerary\": [\n                \"Dubai, United Arab Emirates\",\n                \"Mumbai (Bombay), India\",\n                \"Cochin, India\",\n                \"Colombo, Sri Lanka\",\n                \"Colombo, Sri Lanka\",\n                \"Hambantota, Sri Lanka\",\n                \"Sabang, Indonesia\",\n                \"Singapore, Singapore\"\n            ],\n            \"region\": \"Caribbean\",\n            \"departureDate\": \"2022-11-26\",\n            \"returnDate\": \"2022-12-10\",\n            \"duration\": 14\n        },\n        {\n            \"price\": 1473,\n            \"name\": \"8 Night Southern Caribbean Cruise\",\n            \"ship\": {\n                \"name\": \"Explorer Of The Seas\",\n                \"rating\": 4.5,\n                \"reviews\": 123,\n                \"image\": \"https://res.cloudinary.com/cruisebound/image/upload/f_auto/v1649245378/production/ship_main_image_1_9de27df6_f8a3_46ac_8e61_7ba0bfb2a2b9_eb982a1a02.png\",\n                \"line\": {\n                    \"logo\": \"https://res.cloudinary.com/cruisebound/image/upload/f_auto/v1650047283/production/Royal_Caribbean_Logo_7bf92b5951.jpg\",\n                    \"name\": \"Royal Caribbean International\"\n                }\n            },\n            \"itinerary\": [\n                \"Miami, Florida\",\n                \"Kralendijk, Bonaire, Dutch Antilles\",\n                \"Willemstad, Curacao\",\n                \"Port of Oranjestad, Aruba, Caribbean\",\n                \"Miami, Florida\"\n            ],\n            \"region\": \"Caribbean\",\n            \"departureDate\": \"2022-11-26\",\n            \"returnDate\": \"2022-12-04\",\n            \"duration\": 8\n        },\n        {\n            \"price\": 1179,\n            \"name\": \"14 Night Caribbean Cruise\",\n            \"ship\": {\n                \"name\": \"Sky Princess\",\n                \"rating\": 4.5,\n                \"reviews\": 123,\n                \"image\": \"https://res.cloudinary.com/cruisebound/image/upload/f_auto/v1666981922/production/small_sky_princess_ship_a82c702608.webp\",\n                \"line\": {\n                    \"logo\": \"https://res.cloudinary.com/cruisebound/image/upload/f_auto/v1649727921/production/Princess2020_1_Line_RGB_2_Color_c23999dc2a.jpg\",\n                    \"name\": \"Princess Cruises\"\n                }\n            },\n            \"itinerary\": [\n                \"Fort Lauderdale (Port Everglades), Florida\",\n                \"Princess Cays, Bahamas\",\n                \"St. Thomas, U.S. Virgin Islands\",\n                \"St. Maarten, Netherlands Antilles\",\n                \"Fort Lauderdale (Port Everglades), Florida\",\n                \"Cozumel, Mexico\",\n                \"Roatan, Honduras\",\n                \"Belize City, Belize\",\n                \"Costa Maya, Mexico\",\n                \"Fort Lauderdale (Port Everglades), Florida\"\n            ],\n            \"region\": \"Caribbean\",\n            \"departureDate\": \"2022-11-26\",\n            \"returnDate\": \"2022-12-10\",\n            \"duration\": 14\n        },\n        {\n            \"price\": 999,\n            \"name\": \"12 Night Hawaii\",\n            \"ship\": {\n                \"name\": \"Norwegian Spirit\",\n                \"rating\": 4.5,\n                \"reviews\": 123,\n                \"image\": \"https://res.cloudinary.com/cruisebound/image/upload/f_auto/v1649244883/production/small_ship_main_image_214_8531c1f5_91e0_4077_a91e_2ab3fffff4b1_e92641f142.jpg\",\n                \"line\": {\n                    \"logo\": \"https://res.cloudinary.com/cruisebound/image/upload/f_auto/v1649730379/production/line_logo_4_539b0d9d_8661_4556_810e_da0ac33c1aac_1820d6dc08.png\",\n                    \"name\": \"Norwegian Cruise Line\"\n                }\n            },\n            \"itinerary\": [\n                \"Honolulu, Oahu, Hawaii\",\n                \"Port Allen (Nawiliwili), Kauai, Hawaii\",\n                \"Port Allen (Nawiliwili), Kauai, Hawaii\",\n                \"Kahului, Maui, Hawaii\",\n                \"Hilo, Hawaii\",\n                \"Raiatea, French Polynesia\",\n                \"Bora Bora, French Polynesia\",\n                \"Moorea, French Polynesia\",\n                \"Papeete, Tahiti, French Polynesia\",\n                \"Papeete, Tahiti, French Polynesia\"\n            ],\n            \"region\": \"Caribbean\",\n            \"departureDate\": \"2022-11-26\",\n            \"returnDate\": \"2022-12-08\",\n            \"duration\": 12\n        }\n    ]\n}"
+				}
+			]
+		},
+		{
+			"name": "Example 6 - Filter by departureDate and price: sortOrder ascending",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/api/v1/sailings/search?sortOrder=asc&departureDate=2022-11-26&price=999",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"sailings",
+						"search"
+					],
+					"query": [
+						{
+							"key": "sortOrder",
+							"value": "asc"
+						},
+						{
+							"key": "departureDate",
+							"value": "2022-11-26"
+						},
+						{
+							"key": "price",
+							"value": "999"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Example 6 - Filter by departureDate and price: sortOrder ascending",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/api/v1/sailings/search?sortOrder=asc&departureDate=2022-11-26&price=999",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"sailings",
+								"search"
+							],
+							"query": [
+								{
+									"key": "sortOrder",
+									"value": "asc"
+								},
+								{
+									"key": "departureDate",
+									"value": "2022-11-26"
+								},
+								{
+									"key": "price",
+									"value": "999"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 20 Feb 2023 18:28:51 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"totalResults\": 2,\n    \"totalPages\": 1,\n    \"currentPage\": 1,\n    \"results\": [\n        {\n            \"price\": 999,\n            \"name\": \"12 Night Hawaii\",\n            \"ship\": {\n                \"name\": \"Norwegian Spirit\",\n                \"rating\": 4.5,\n                \"reviews\": 123,\n                \"image\": \"https://res.cloudinary.com/cruisebound/image/upload/f_auto/v1649244883/production/small_ship_main_image_214_8531c1f5_91e0_4077_a91e_2ab3fffff4b1_e92641f142.jpg\",\n                \"line\": {\n                    \"logo\": \"https://res.cloudinary.com/cruisebound/image/upload/f_auto/v1649730379/production/line_logo_4_539b0d9d_8661_4556_810e_da0ac33c1aac_1820d6dc08.png\",\n                    \"name\": \"Norwegian Cruise Line\"\n                }\n            },\n            \"itinerary\": [\n                \"Honolulu, Oahu, Hawaii\",\n                \"Port Allen (Nawiliwili), Kauai, Hawaii\",\n                \"Port Allen (Nawiliwili), Kauai, Hawaii\",\n                \"Kahului, Maui, Hawaii\",\n                \"Hilo, Hawaii\",\n                \"Raiatea, French Polynesia\",\n                \"Bora Bora, French Polynesia\",\n                \"Moorea, French Polynesia\",\n                \"Papeete, Tahiti, French Polynesia\",\n                \"Papeete, Tahiti, French Polynesia\"\n            ],\n            \"region\": \"Caribbean\",\n            \"departureDate\": \"2022-11-26\",\n            \"returnDate\": \"2022-12-08\",\n            \"duration\": 12\n        },\n        {\n            \"price\": 999,\n            \"name\": \"12 Night Hawaii\",\n            \"ship\": {\n                \"name\": \"Norwegian Spirit\",\n                \"rating\": 4.5,\n                \"reviews\": 123,\n                \"image\": \"https://res.cloudinary.com/cruisebound/image/upload/f_auto/v1649244883/production/small_ship_main_image_214_8531c1f5_91e0_4077_a91e_2ab3fffff4b1_e92641f142.jpg\",\n                \"line\": {\n                    \"logo\": \"https://res.cloudinary.com/cruisebound/image/upload/f_auto/v1649730379/production/line_logo_4_539b0d9d_8661_4556_810e_da0ac33c1aac_1820d6dc08.png\",\n                    \"name\": \"Norwegian Cruise Line\"\n                }\n            },\n            \"itinerary\": [\n                \"Honolulu, Oahu, Hawaii\",\n                \"Port Allen (Nawiliwili), Kauai, Hawaii\",\n                \"Port Allen (Nawiliwili), Kauai, Hawaii\",\n                \"Kahului, Maui, Hawaii\",\n                \"Hilo, Hawaii\",\n                \"Raiatea, French Polynesia\",\n                \"Bora Bora, French Polynesia\",\n                \"Papeete, Tahiti, French Polynesia\",\n                \"Moorea, French Polynesia\",\n                \"Papeete, Tahiti, French Polynesia\"\n            ],\n            \"region\": \"Caribbean\",\n            \"departureDate\": \"2022-11-26\",\n            \"returnDate\": \"2022-12-08\",\n            \"duration\": 12\n        }\n    ]\n}"
+				}
+			]
+		},
+		{
+			"name": "Example 7 - Filter by departureDate, price, duration and returnDate: sortOrder ascending Copy",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/api/v1/sailings/search?sortBy=price&sortOrder=desc&departureDate=2022-11-26&price=999",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"sailings",
+						"search"
+					],
+					"query": [
+						{
+							"key": "sortBy",
+							"value": "price"
+						},
+						{
+							"key": "sortOrder",
+							"value": "desc"
+						},
+						{
+							"key": "departureDate",
+							"value": "2022-11-26"
+						},
+						{
+							"key": "price",
+							"value": "999"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Example 7 - Filter by departureDate, price, duration and returnDate: sortOrder ascending Copy",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/api/v1/sailings/search?sortBy=price&sortOrder=desc&departureDate=2022-11-26&price=999",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"sailings",
+								"search"
+							],
+							"query": [
+								{
+									"key": "sortBy",
+									"value": "price"
+								},
+								{
+									"key": "sortOrder",
+									"value": "desc"
+								},
+								{
+									"key": "departureDate",
+									"value": "2022-11-26"
+								},
+								{
+									"key": "price",
+									"value": "999"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 20 Feb 2023 18:28:55 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"totalResults\": 2,\n    \"totalPages\": 1,\n    \"currentPage\": 1,\n    \"results\": [\n        {\n            \"price\": 999,\n            \"name\": \"12 Night Hawaii\",\n            \"ship\": {\n                \"name\": \"Norwegian Spirit\",\n                \"rating\": 4.5,\n                \"reviews\": 123,\n                \"image\": \"https://res.cloudinary.com/cruisebound/image/upload/f_auto/v1649244883/production/small_ship_main_image_214_8531c1f5_91e0_4077_a91e_2ab3fffff4b1_e92641f142.jpg\",\n                \"line\": {\n                    \"logo\": \"https://res.cloudinary.com/cruisebound/image/upload/f_auto/v1649730379/production/line_logo_4_539b0d9d_8661_4556_810e_da0ac33c1aac_1820d6dc08.png\",\n                    \"name\": \"Norwegian Cruise Line\"\n                }\n            },\n            \"itinerary\": [\n                \"Honolulu, Oahu, Hawaii\",\n                \"Port Allen (Nawiliwili), Kauai, Hawaii\",\n                \"Port Allen (Nawiliwili), Kauai, Hawaii\",\n                \"Kahului, Maui, Hawaii\",\n                \"Hilo, Hawaii\",\n                \"Raiatea, French Polynesia\",\n                \"Bora Bora, French Polynesia\",\n                \"Moorea, French Polynesia\",\n                \"Papeete, Tahiti, French Polynesia\",\n                \"Papeete, Tahiti, French Polynesia\"\n            ],\n            \"region\": \"Caribbean\",\n            \"departureDate\": \"2022-11-26\",\n            \"returnDate\": \"2022-12-08\",\n            \"duration\": 12\n        },\n        {\n            \"price\": 999,\n            \"name\": \"12 Night Hawaii\",\n            \"ship\": {\n                \"name\": \"Norwegian Spirit\",\n                \"rating\": 4.5,\n                \"reviews\": 123,\n                \"image\": \"https://res.cloudinary.com/cruisebound/image/upload/f_auto/v1649244883/production/small_ship_main_image_214_8531c1f5_91e0_4077_a91e_2ab3fffff4b1_e92641f142.jpg\",\n                \"line\": {\n                    \"logo\": \"https://res.cloudinary.com/cruisebound/image/upload/f_auto/v1649730379/production/line_logo_4_539b0d9d_8661_4556_810e_da0ac33c1aac_1820d6dc08.png\",\n                    \"name\": \"Norwegian Cruise Line\"\n                }\n            },\n            \"itinerary\": [\n                \"Honolulu, Oahu, Hawaii\",\n                \"Port Allen (Nawiliwili), Kauai, Hawaii\",\n                \"Port Allen (Nawiliwili), Kauai, Hawaii\",\n                \"Kahului, Maui, Hawaii\",\n                \"Hilo, Hawaii\",\n                \"Raiatea, French Polynesia\",\n                \"Bora Bora, French Polynesia\",\n                \"Papeete, Tahiti, French Polynesia\",\n                \"Moorea, French Polynesia\",\n                \"Papeete, Tahiti, French Polynesia\"\n            ],\n            \"region\": \"Caribbean\",\n            \"departureDate\": \"2022-11-26\",\n            \"returnDate\": \"2022-12-08\",\n            \"duration\": 12\n        }\n    ]\n}"
+				}
+			]
+		}
+	]
+}
