@@ -1,12 +1,11 @@
 package com.cruisebound.assessment.controllers
 
 import com.cruisebound.assessment.services.SailingService
+import org.springframework.data.mapping.PropertyReferenceException
 import org.springframework.http.HttpStatus
 import org.springframework.http.ResponseEntity
-import org.springframework.web.bind.annotation.GetMapping
-import org.springframework.web.bind.annotation.RequestMapping
-import org.springframework.web.bind.annotation.RequestParam
-import org.springframework.web.bind.annotation.RestController
+import org.springframework.web.bind.annotation.*
+import java.time.format.DateTimeParseException
 
 @RestController
 @RequestMapping("/api/v1/sailings")
@@ -24,5 +23,20 @@ class SailingController(private val sailingService: SailingService) {
         return ResponseEntity<Map<String, Any>>(response, HttpStatus.OK)
     }
 
+    //  Sometimes is better to avoid returning too much information about the error (like queries, models, id's...)
+    @ResponseStatus(HttpStatus.BAD_REQUEST)
+    @ExceptionHandler(PropertyReferenceException::class)
+    fun handlePropertyReferenceException(exception: PropertyReferenceException?): HashMap<String, String> {
+        val error = HashMap<String, String>()
+        error["error"] = "Can't complete the search with the provided parameters, please try with different value"
+        return error
+    }
 
+    @ResponseStatus(HttpStatus.BAD_REQUEST)
+    @ExceptionHandler(DateTimeParseException::class)
+    fun handleDateTimeParseException(exception: DateTimeParseException?): HashMap<String, String> {
+        val error = HashMap<String, String>()
+        error["error"] = "The date yoi provided is not in the correct format, please try again with yyyy-MM-dd"
+        return error
+    }
 }
