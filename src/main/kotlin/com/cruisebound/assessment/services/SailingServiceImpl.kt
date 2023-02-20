@@ -1,6 +1,9 @@
 package com.cruisebound.assessment.services
 
+import com.cruisebound.assessment.domains.Sailing
 import com.cruisebound.assessment.repositories.SailingRepository
+import com.cruisebound.assessment.repositories.specifications.SailingSpecifications
+import org.springframework.data.domain.Page
 import org.springframework.data.domain.PageRequest
 import org.springframework.data.domain.Pageable
 import org.springframework.data.domain.Sort
@@ -29,7 +32,11 @@ class SailingServiceImpl(private val sailingRepository: SailingRepository) : Sai
 
         val paging: Pageable = PageRequest.of(pageNumber, 10, sort)
 
-        val result = sailingRepository.findAll(paging)
+        val result : Page<Sailing> = if (price == null && departureDate == null && duration == null && returnDate == null) {
+            sailingRepository.findAll(paging)
+        } else {
+            sailingRepository.findAll(SailingSpecifications().toPredicate(price, departureDate, duration, returnDate), paging)
+        }
 
         val response = HashMap<String, Any>()
         response["results"] = result.content

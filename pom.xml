@@ -50,6 +50,7 @@
 			<scope>test</scope>
 		</dependency>
 
+		<!--		Java 8 date/time type `java.time.LocalDate`-->
 		<dependency>
 			<groupId>com.fasterxml.jackson.datatype</groupId>
 			<artifactId>jackson-datatype-jsr310</artifactId>
