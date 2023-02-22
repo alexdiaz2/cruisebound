@@ -3,7 +3,6 @@ package com.cruisebound.assessment.controllers
 import com.cruisebound.assessment.domains.Results
 import com.cruisebound.assessment.domains.Sailing
 import com.cruisebound.assessment.services.SailingService
-import com.fasterxml.jackson.annotation.JsonFormat
 import org.springframework.data.mapping.PropertyReferenceException
 import org.springframework.http.HttpStatus
 import org.springframework.http.ResponseEntity
@@ -29,6 +28,11 @@ class SailingController(private val sailingService: SailingService) {
                 HttpStatus.BAD_REQUEST, "To many parameters"
             )
         }
+        if (sortOrder.isNotEmpty() && sortOrder.lowercase() != "asc" && sortOrder.lowercase() != "desc") {
+            throw ResponseStatusException(
+                HttpStatus.BAD_REQUEST, "Unsupported order"
+            )
+        }
         if (allParams.isNotEmpty()) {
             for (parameter in allParams.keys) {
                 if (parameter != "page" && parameter != "sortBy" && parameter != "sortOrder" && parameter != "price"
@@ -39,7 +43,8 @@ class SailingController(private val sailingService: SailingService) {
                 }
             }
         }
-        val result = sailingService.searchSailings(page, sortBy,sortOrder, price, departureDate, duration, returnDate)
+
+        val result = sailingService.searchSailings(page, sortBy.lowercase(), sortOrder.lowercase(), price, departureDate, duration, returnDate)
         val response = HashMap<String, Any>()
         response["results"] = result.content
         response["currentPage"] = result.number + 1
