@@ -74,7 +74,6 @@ class SailingControllerTest {
             contentType = MediaType.APPLICATION_JSON
             accept = MediaType.ALL
         }
-            .andDo { print() }
             .andExpect {
                 status { isCreated() }
                 jsonPath("$.size()") { value(100) }
@@ -93,7 +92,6 @@ class SailingControllerTest {
             param("sortBy", "id")
             param("sortOrder", "asc")
         }
-            .andDo { print() }
             .andExpect {
                 status { isOk() }
                 jsonPath("$.totalPages") { value(10) }
@@ -115,7 +113,6 @@ class SailingControllerTest {
             param("sortBy", "id")
             param("sortOrder", "asc")
         }
-            .andDo { print() }
             .andExpect {
                 status { isOk() }
                 jsonPath("$.currentPage") { value(5 - 1) }
@@ -134,7 +131,6 @@ class SailingControllerTest {
             param("sortBy", "price")
             param("sortOrder", "asc")
         }
-            .andDo { print() }
             .andExpect {
                 status { isOk() }
             }
@@ -157,7 +153,6 @@ class SailingControllerTest {
             param("sortBy", "price")
             param("sortOrder", "desc")
         }
-            .andDo { print() }
             .andExpect {
                 status { isOk() }
             }
@@ -183,7 +178,6 @@ class SailingControllerTest {
             param("sortOrder", "desc")
             param("departureDate", "2022-11-26")
         }
-            .andDo { print() }
             .andExpect {
                 status { isOk() }
                 jsonPath("$.totalResults") { value(filteredResults.size) }
@@ -224,7 +218,6 @@ class SailingControllerTest {
             param("price", "$price")
             param("departureDate", "2022-11-26")
         }
-            .andDo { print() }
             .andExpect {
                 status { isOk() }
                 jsonPath("$.totalResults") { value(filteredResults.size) }
@@ -272,7 +265,6 @@ class SailingControllerTest {
             param("duration", "$duration")
             param("returnDate", "2022-12-01")
         }
-            .andDo { print() }
             .andExpect {
                 status { isOk() }
                 jsonPath("$.totalResults") { value(filteredResults.size) }
