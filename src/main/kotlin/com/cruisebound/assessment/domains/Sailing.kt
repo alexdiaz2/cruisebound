@@ -1,6 +1,7 @@
 package com.cruisebound.assessment.domains
 
 import com.cruisebound.assessment.utils.ItineraryConverter
+import com.fasterxml.jackson.annotation.JsonFormat
 import com.fasterxml.jackson.annotation.JsonIgnore
 import jakarta.persistence.*
 import java.time.LocalDate
@@ -23,7 +24,9 @@ class Sailing {
     var itinerary: List<String> = listOf()
 
     var region: String? = null
+    @JsonFormat(pattern = "yyyy-MM-dd")
     var departureDate: LocalDate? = null
+    @JsonFormat(pattern = "yyyy-MM-dd")
     var returnDate: LocalDate? = null
     var duration: Int? = null
 }

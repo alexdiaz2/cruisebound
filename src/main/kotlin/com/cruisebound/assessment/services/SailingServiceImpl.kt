@@ -11,6 +11,10 @@ import org.springframework.stereotype.Service
 
 @Service
 class SailingServiceImpl(private val sailingRepository: SailingRepository) : SailingService {
+    override fun addSailings(sailings: List<Sailing>): MutableList<Sailing> {
+        return sailingRepository.saveAll(sailings)
+    }
+
     override fun searchSailings(
         page: Int,
         sortBy: String,
@@ -19,7 +23,7 @@ class SailingServiceImpl(private val sailingRepository: SailingRepository) : Sai
         departureDate: String?,
         duration: Int?,
         returnDate: String?
-    ): HashMap<String, Any> {
+    ): Page<Sailing> {
         val pageNumber = if (page > 0)
             page - 1
         else
@@ -38,12 +42,6 @@ class SailingServiceImpl(private val sailingRepository: SailingRepository) : Sai
             sailingRepository.findAll(SailingSpecifications().toPredicate(price, departureDate, duration, returnDate), paging)
         }
 
-        val response = HashMap<String, Any>()
-        response["results"] = result.content
-        response["currentPage"] = result.number + 1
-        response["totalResults"] = result.totalElements
-        response["totalPages"] = result.totalPages
-
-        return response
+        return result
     }
 }
