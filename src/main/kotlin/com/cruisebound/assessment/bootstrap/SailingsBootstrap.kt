@@ -1,7 +1,7 @@
 package com.cruisebound.assessment.bootstrap
 
 import com.cruisebound.assessment.domains.Results
-import com.cruisebound.assessment.services.ImportSailingsService
+import com.cruisebound.assessment.services.SailingService
 import com.fasterxml.jackson.core.type.TypeReference
 import com.fasterxml.jackson.databind.ObjectMapper
 import com.fasterxml.jackson.datatype.jsr310.JavaTimeModule
@@ -10,7 +10,7 @@ import org.springframework.core.io.ClassPathResource
 import org.springframework.stereotype.Component
 
 @Component
-class SailingsBootstrap(private val importSailingsService: ImportSailingsService) : CommandLineRunner {
+class SailingsBootstrap(private val sailingService: SailingService) : CommandLineRunner {
     override fun run(vararg args: String?) {
         importSailingsData()
     }
@@ -25,6 +25,6 @@ class SailingsBootstrap(private val importSailingsService: ImportSailingsService
         val inputStream = ClassPathResource("data/sailingsData.json").inputStream
 
         val results = mapper.readValue(inputStream, typeReference)
-        importSailingsService.addSailings(results.results)
+        sailingService.addSailings(results.results)
     }
 }
