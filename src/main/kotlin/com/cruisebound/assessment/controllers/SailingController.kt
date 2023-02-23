@@ -44,7 +44,7 @@ class SailingController(private val sailingService: SailingService) {
             }
         }
 
-        val result = sailingService.searchSailings(page, sortBy.lowercase(), sortOrder.lowercase(), price, departureDate, duration, returnDate)
+        val result = sailingService.searchSailings(page, sortBy, sortOrder.lowercase(), price, departureDate, duration, returnDate)
         val response = HashMap<String, Any>()
         response["results"] = result.content
         response["currentPage"] = result.number + 1
