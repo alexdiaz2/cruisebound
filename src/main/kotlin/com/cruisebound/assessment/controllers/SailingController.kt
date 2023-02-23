@@ -30,7 +30,7 @@ class SailingController(private val sailingService: SailingService) {
         }
         if (sortOrder.isNotEmpty() && sortOrder.lowercase() != "asc" && sortOrder.lowercase() != "desc") {
             throw ResponseStatusException(
-                HttpStatus.BAD_REQUEST, "Unsupported order"
+                HttpStatus.BAD_REQUEST, "Unsupported sort order"
             )
         }
         if (allParams.isNotEmpty()) {
@@ -61,20 +61,24 @@ class SailingController(private val sailingService: SailingService) {
         return ResponseEntity<MutableList<Sailing>>(sailingList, HttpStatus.CREATED)
     }
 
-    //  Sometimes is better to avoid returning too much information about the error (like queries, models, id's...)
     @ResponseStatus(HttpStatus.BAD_REQUEST)
     @ExceptionHandler(PropertyReferenceException::class)
-    fun handlePropertyReferenceException(exception: PropertyReferenceException?): HashMap<String, String> {
-        val error = HashMap<String, String>()
-        error["error"] = "Can't complete the search with the provided parameters, please try with different value"
-        return error
+    fun handlePropertyReferenceException(exception: PropertyReferenceException?): LinkedHashMap<String, Any> {
+        return formatError("Can't complete the search with the provided parameters, please try with different value")
     }
 
     @ResponseStatus(HttpStatus.BAD_REQUEST)
     @ExceptionHandler(DateTimeParseException::class)
-    fun handleDateTimeParseException(exception: DateTimeParseException?): HashMap<String, String> {
-        val error = HashMap<String, String>()
-        error["error"] = "The date you provided is not in the correct format, please try again with yyyy-MM-dd"
+    fun handleDateTimeParseException(exception: DateTimeParseException?): LinkedHashMap<String, Any> {
+        return formatError("The date you provided is not in the correct format, please try again with yyyy-MM-dd")
+    }
+
+    fun formatError(message: String): LinkedHashMap<String, Any> {
+        val error = LinkedHashMap<String, Any>()
+        error["title"] = "Bad Request"
+        error["status"] = 400
+        error["detail"] = message
+        error["instance"] = "/api/v1/sailings/search"
         return error
     }
 }
