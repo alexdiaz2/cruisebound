@@ -1,7 +1,7 @@
 {
 	"info": {
 		"_postman_id": "b04d1bec-e2a4-4dcd-99e7-4f5a9e502642",
-		"name": "Cruisebound",
+		"name": "Assessment - Jorge Diaz",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
 		"_exporter_id": "11436546"
 	},
@@ -429,7 +429,7 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "localhost:8080/api/v1/sailings/search?sortOrder=asc&departureDate=2022-11-26&price=999",
+					"raw": "localhost:8080/api/v1/sailings/search?sortOrder=asc&price=429",
 					"host": [
 						"localhost"
 					],
@@ -446,12 +446,8 @@
 							"value": "asc"
 						},
 						{
-							"key": "departureDate",
-							"value": "2022-11-26"
-						},
-						{
 							"key": "price",
-							"value": "999"
+							"value": "429"
 						}
 					]
 				}
@@ -463,7 +459,7 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "localhost:8080/api/v1/sailings/search?sortOrder=asc&departureDate=2022-11-26&price=999",
+							"raw": "localhost:8080/api/v1/sailings/search?sortOrder=asc&price=429",
 							"host": [
 								"localhost"
 							],
@@ -480,12 +476,8 @@
 									"value": "asc"
 								},
 								{
-									"key": "departureDate",
-									"value": "2022-11-26"
-								},
-								{
 									"key": "price",
-									"value": "999"
+									"value": "429"
 								}
 							]
 						}
@@ -504,7 +496,7 @@
 						},
 						{
 							"key": "Date",
-							"value": "Mon, 20 Feb 2023 18:28:51 GMT"
+							"value": "Wed, 22 Feb 2023 21:20:10 GMT"
 						},
 						{
 							"key": "Keep-Alive",
@@ -516,17 +508,17 @@
 						}
 					],
 					"cookie": [],
-					"body": "{\n    \"totalResults\": 2,\n    \"totalPages\": 1,\n    \"currentPage\": 1,\n    \"results\": [\n        {\n            \"price\": 999,\n            \"name\": \"12 Night Hawaii\",\n            \"ship\": {\n                \"name\": \"Norwegian Spirit\",\n                \"rating\": 4.5,\n                \"reviews\": 123,\n                \"image\": \"https://res.cloudinary.com/cruisebound/image/upload/f_auto/v1649244883/production/small_ship_main_image_214_8531c1f5_91e0_4077_a91e_2ab3fffff4b1_e92641f142.jpg\",\n                \"line\": {\n                    \"logo\": \"https://res.cloudinary.com/cruisebound/image/upload/f_auto/v1649730379/production/line_logo_4_539b0d9d_8661_4556_810e_da0ac33c1aac_1820d6dc08.png\",\n                    \"name\": \"Norwegian Cruise Line\"\n                }\n            },\n            \"itinerary\": [\n                \"Honolulu, Oahu, Hawaii\",\n                \"Port Allen (Nawiliwili), Kauai, Hawaii\",\n                \"Port Allen (Nawiliwili), Kauai, Hawaii\",\n                \"Kahului, Maui, Hawaii\",\n                \"Hilo, Hawaii\",\n                \"Raiatea, French Polynesia\",\n                \"Bora Bora, French Polynesia\",\n                \"Moorea, French Polynesia\",\n                \"Papeete, Tahiti, French Polynesia\",\n                \"Papeete, Tahiti, French Polynesia\"\n            ],\n            \"region\": \"Caribbean\",\n            \"departureDate\": \"2022-11-26\",\n            \"returnDate\": \"2022-12-08\",\n            \"duration\": 12\n        },\n        {\n            \"price\": 999,\n            \"name\": \"12 Night Hawaii\",\n            \"ship\": {\n                \"name\": \"Norwegian Spirit\",\n                \"rating\": 4.5,\n                \"reviews\": 123,\n                \"image\": \"https://res.cloudinary.com/cruisebound/image/upload/f_auto/v1649244883/production/small_ship_main_image_214_8531c1f5_91e0_4077_a91e_2ab3fffff4b1_e92641f142.jpg\",\n                \"line\": {\n                    \"logo\": \"https://res.cloudinary.com/cruisebound/image/upload/f_auto/v1649730379/production/line_logo_4_539b0d9d_8661_4556_810e_da0ac33c1aac_1820d6dc08.png\",\n                    \"name\": \"Norwegian Cruise Line\"\n                }\n            },\n            \"itinerary\": [\n                \"Honolulu, Oahu, Hawaii\",\n                \"Port Allen (Nawiliwili), Kauai, Hawaii\",\n                \"Port Allen (Nawiliwili), Kauai, Hawaii\",\n                \"Kahului, Maui, Hawaii\",\n                \"Hilo, Hawaii\",\n                \"Raiatea, French Polynesia\",\n                \"Bora Bora, French Polynesia\",\n                \"Papeete, Tahiti, French Polynesia\",\n                \"Moorea, French Polynesia\",\n                \"Papeete, Tahiti, French Polynesia\"\n            ],\n            \"region\": \"Caribbean\",\n            \"departureDate\": \"2022-11-26\",\n            \"returnDate\": \"2022-12-08\",\n            \"duration\": 12\n        }\n    ]\n}"
+					"body": "{\n    \"totalResults\": 3,\n    \"totalPages\": 1,\n    \"currentPage\": 1,\n    \"results\": [\n        {\n            \"price\": 429,\n            \"name\": \"5 Night Bermuda\",\n            \"ship\": {\n                \"name\": \"Norwegian Joy\",\n                \"rating\": 4.5,\n                \"reviews\": 123,\n                \"image\": \"https://res.cloudinary.com/cruisebound/image/upload/f_auto/v1649244879/production/ship_main_image_1364185_d07dc981_d91b_45d5_986c_cb465766af36_7ae8188910.jpg\",\n                \"line\": {\n                    \"logo\": \"https://res.cloudinary.com/cruisebound/image/upload/f_auto/v1649730379/production/line_logo_4_539b0d9d_8661_4556_810e_da0ac33c1aac_1820d6dc08.png\",\n                    \"name\": \"Norwegian Cruise Line\"\n                }\n            },\n            \"itinerary\": [\n                \"New York, New York\",\n                \"Royal Naval Dockyard, Bermuda\",\n                \"Royal Naval Dockyard, Bermuda\",\n                \"New York, New York\"\n            ],\n            \"region\": \"Caribbean\",\n            \"departureDate\": \"2022-11-26\",\n            \"returnDate\": \"2022-12-01\",\n            \"duration\": 5\n        },\n        {\n            \"price\": 429,\n            \"name\": \"5 Night Bermuda\",\n            \"ship\": {\n                \"name\": \"Norwegian Joy\",\n                \"rating\": 4.5,\n                \"reviews\": 123,\n                \"image\": \"https://res.cloudinary.com/cruisebound/image/upload/f_auto/v1649244879/production/ship_main_image_1364185_d07dc981_d91b_45d5_986c_cb465766af36_7ae8188910.jpg\",\n                \"line\": {\n                    \"logo\": \"https://res.cloudinary.com/cruisebound/image/upload/f_auto/v1649730379/production/line_logo_4_539b0d9d_8661_4556_810e_da0ac33c1aac_1820d6dc08.png\",\n                    \"name\": \"Norwegian Cruise Line\"\n                }\n            },\n            \"itinerary\": [\n                \"New York, New York\",\n                \"Royal Naval Dockyard, Bermuda\",\n                \"Royal Naval Dockyard, Bermuda\",\n                \"New York, New York\"\n            ],\n            \"region\": \"Caribbean\",\n            \"departureDate\": \"2022-11-26\",\n            \"returnDate\": \"2022-12-01\",\n            \"duration\": 5\n        },\n        {\n            \"price\": 429,\n            \"name\": \"5 Night Bermuda\",\n            \"ship\": {\n                \"name\": \"Norwegian Joy\",\n                \"rating\": 4.5,\n                \"reviews\": 123,\n                \"image\": \"https://res.cloudinary.com/cruisebound/image/upload/f_auto/v1649244879/production/ship_main_image_1364185_d07dc981_d91b_45d5_986c_cb465766af36_7ae8188910.jpg\",\n                \"line\": {\n                    \"logo\": \"https://res.cloudinary.com/cruisebound/image/upload/f_auto/v1649730379/production/line_logo_4_539b0d9d_8661_4556_810e_da0ac33c1aac_1820d6dc08.png\",\n                    \"name\": \"Norwegian Cruise Line\"\n                }\n            },\n            \"itinerary\": [\n                \"New York, New York\",\n                \"Royal Naval Dockyard, Bermuda\",\n                \"Royal Naval Dockyard, Bermuda\",\n                \"New York, New York\"\n            ],\n            \"region\": \"Caribbean\",\n            \"departureDate\": \"2022-11-26\",\n            \"returnDate\": \"2022-12-01\",\n            \"duration\": 5\n        }\n    ]\n}"
 				}
 			]
 		},
 		{
-			"name": "Example 7 - Filter by departureDate, price, duration and returnDate: sortOrder ascending Copy",
+			"name": "Example 7 - Filter by departureDate, price, duration and returnDate: sortOrder ascending",
 			"request": {
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "localhost:8080/api/v1/sailings/search?sortBy=price&sortOrder=desc&departureDate=2022-11-26&price=999",
+					"raw": "localhost:8080/api/v1/sailings/search?sortBy=price&sortOrder=desc&departureDate=2022-11-26&price=999&duration=12&returnDate=2022-12-08",
 					"host": [
 						"localhost"
 					],
@@ -553,6 +545,14 @@
 						{
 							"key": "price",
 							"value": "999"
+						},
+						{
+							"key": "duration",
+							"value": "12"
+						},
+						{
+							"key": "returnDate",
+							"value": "2022-12-08"
 						}
 					]
 				}
@@ -622,6 +622,93 @@
 					],
 					"cookie": [],
 					"body": "{\n    \"totalResults\": 2,\n    \"totalPages\": 1,\n    \"currentPage\": 1,\n    \"results\": [\n        {\n            \"price\": 999,\n            \"name\": \"12 Night Hawaii\",\n            \"ship\": {\n                \"name\": \"Norwegian Spirit\",\n                \"rating\": 4.5,\n                \"reviews\": 123,\n                \"image\": \"https://res.cloudinary.com/cruisebound/image/upload/f_auto/v1649244883/production/small_ship_main_image_214_8531c1f5_91e0_4077_a91e_2ab3fffff4b1_e92641f142.jpg\",\n                \"line\": {\n                    \"logo\": \"https://res.cloudinary.com/cruisebound/image/upload/f_auto/v1649730379/production/line_logo_4_539b0d9d_8661_4556_810e_da0ac33c1aac_1820d6dc08.png\",\n                    \"name\": \"Norwegian Cruise Line\"\n                }\n            },\n            \"itinerary\": [\n                \"Honolulu, Oahu, Hawaii\",\n                \"Port Allen (Nawiliwili), Kauai, Hawaii\",\n                \"Port Allen (Nawiliwili), Kauai, Hawaii\",\n                \"Kahului, Maui, Hawaii\",\n                \"Hilo, Hawaii\",\n                \"Raiatea, French Polynesia\",\n                \"Bora Bora, French Polynesia\",\n                \"Moorea, French Polynesia\",\n                \"Papeete, Tahiti, French Polynesia\",\n                \"Papeete, Tahiti, French Polynesia\"\n            ],\n            \"region\": \"Caribbean\",\n            \"departureDate\": \"2022-11-26\",\n            \"returnDate\": \"2022-12-08\",\n            \"duration\": 12\n        },\n        {\n            \"price\": 999,\n            \"name\": \"12 Night Hawaii\",\n            \"ship\": {\n                \"name\": \"Norwegian Spirit\",\n                \"rating\": 4.5,\n                \"reviews\": 123,\n                \"image\": \"https://res.cloudinary.com/cruisebound/image/upload/f_auto/v1649244883/production/small_ship_main_image_214_8531c1f5_91e0_4077_a91e_2ab3fffff4b1_e92641f142.jpg\",\n                \"line\": {\n                    \"logo\": \"https://res.cloudinary.com/cruisebound/image/upload/f_auto/v1649730379/production/line_logo_4_539b0d9d_8661_4556_810e_da0ac33c1aac_1820d6dc08.png\",\n                    \"name\": \"Norwegian Cruise Line\"\n                }\n            },\n            \"itinerary\": [\n                \"Honolulu, Oahu, Hawaii\",\n                \"Port Allen (Nawiliwili), Kauai, Hawaii\",\n                \"Port Allen (Nawiliwili), Kauai, Hawaii\",\n                \"Kahului, Maui, Hawaii\",\n                \"Hilo, Hawaii\",\n                \"Raiatea, French Polynesia\",\n                \"Bora Bora, French Polynesia\",\n                \"Papeete, Tahiti, French Polynesia\",\n                \"Moorea, French Polynesia\",\n                \"Papeete, Tahiti, French Polynesia\"\n            ],\n            \"region\": \"Caribbean\",\n            \"departureDate\": \"2022-11-26\",\n            \"returnDate\": \"2022-12-08\",\n            \"duration\": 12\n        }\n    ]\n}"
+				}
+			]
+		},
+		{
+			"name": "Example 8 - Import",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"results\": [\n        {\n            \"price\": 319.0,\n            \"name\": \"7 Night Mediterranean - Western Cruise\",\n            \"ship\": {\n                \"name\": \"MSC Virtuosa\",\n                \"rating\": 4.5,\n                \"reviews\": 123,\n                \"image\": \"https://res.cloudinary.com/cruisebound/image/upload/f_auto/v1656397931/production/small_msc_vi_item_76c6c4b53c.png\",\n                \"line\": {\n                    \"logo\": \"https://res.cloudinary.com/cruisebound/image/upload/f_auto/v1649242239/production/line_logo_6_4bbd4246_eded_4690_bd5e_b184f4a64e82_0f9ac3171a.jpg\",\n                    \"name\": \"MSC Cruises\"\n                }\n            },\n            \"itinerary\": [\n                \"Naples, Italy\",\n                \"Palma de Mallorca, Spain\",\n                \"Barcelona, Spain\",\n                \"Marseille, France\",\n                \"Genoa, Italy\",\n                \"La Spezia (Cinque Terre), Italy\",\n                \"Naples, Italy\"\n            ],\n            \"region\": \"Caribbean\",\n            \"departureDate\": \"2022-11-23\",\n            \"returnDate\": \"2022-11-30\",\n            \"duration\": 7\n        }\n    ]\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/api/v1/sailings/import",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"sailings",
+						"import"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Example 8 - Import",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"results\": [\n        {\n            \"price\": 319.0,\n            \"name\": \"7 Night Mediterranean - Western Cruise\",\n            \"ship\": {\n                \"name\": \"MSC Virtuosa\",\n                \"rating\": 4.5,\n                \"reviews\": 123,\n                \"image\": \"https://res.cloudinary.com/cruisebound/image/upload/f_auto/v1656397931/production/small_msc_vi_item_76c6c4b53c.png\",\n                \"line\": {\n                    \"logo\": \"https://res.cloudinary.com/cruisebound/image/upload/f_auto/v1649242239/production/line_logo_6_4bbd4246_eded_4690_bd5e_b184f4a64e82_0f9ac3171a.jpg\",\n                    \"name\": \"MSC Cruises\"\n                }\n            },\n            \"itinerary\": [\n                \"Naples, Italy\",\n                \"Palma de Mallorca, Spain\",\n                \"Barcelona, Spain\",\n                \"Marseille, France\",\n                \"Genoa, Italy\",\n                \"La Spezia (Cinque Terre), Italy\",\n                \"Naples, Italy\"\n            ],\n            \"region\": \"Caribbean\",\n            \"departureDate\": \"2022-11-23\",\n            \"returnDate\": \"2022-11-30\",\n            \"duration\": 7\n        }\n    ]\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/api/v1/sailings/import",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"sailings",
+								"import"
+							]
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 21 Feb 2023 22:43:25 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"price\": 319,\n        \"name\": \"7 Night Mediterranean - Western Cruise\",\n        \"ship\": {\n            \"name\": \"MSC Virtuosa\",\n            \"rating\": 4.5,\n            \"reviews\": 123,\n            \"image\": \"https://res.cloudinary.com/cruisebound/image/upload/f_auto/v1656397931/production/small_msc_vi_item_76c6c4b53c.png\",\n            \"line\": {\n                \"logo\": \"https://res.cloudinary.com/cruisebound/image/upload/f_auto/v1649242239/production/line_logo_6_4bbd4246_eded_4690_bd5e_b184f4a64e82_0f9ac3171a.jpg\",\n                \"name\": \"MSC Cruises\"\n            }\n        },\n        \"itinerary\": [\n            \"Naples, Italy\",\n            \"Palma de Mallorca, Spain\",\n            \"Barcelona, Spain\",\n            \"Marseille, France\",\n            \"Genoa, Italy\",\n            \"La Spezia (Cinque Terre), Italy\",\n            \"Naples, Italy\"\n        ],\n        \"region\": \"Caribbean\",\n        \"departureDate\": \"2022-11-23\",\n        \"returnDate\": \"2022-11-30\",\n        \"duration\": 7\n    }\n]"
 				}
 			]
 		}
