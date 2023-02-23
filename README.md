@@ -23,7 +23,7 @@ You must have installed the following tools:
 
 Before running the project you should create a new PostgreSQL database.
 You should modify the applications.properties file with the parameters you used to create the database.
-As you can see I used the sailings database with the "postgres" user and the "toor" password
+The default configuration uses the "sailings" database with the "postgres" user and the "toor" password
 
 - spring.datasource.url=jdbc:postgresql://localhost:5432/sailings
 - spring.datasource.username=postgres
@@ -39,9 +39,9 @@ The db/init.sh script will create the sailings database automatically
 
 ### Remember to close all connections to ports 8080 and 5432
 
-To run the project you should execute the following commands:
+To run the project you should execute the following commands in the root folder of the project "cruisebound":
 
-- mvn clean install (This command will execute the tests too)
+- mvn clean install -DskipTests
 
 ### Local
 
@@ -51,12 +51,16 @@ To run the project you should execute the following commands:
 
 - docker-compose up
 
-## Run tests
+## Run tests in local
 
-To run only the tests you should execute the following command:
+To run the tests you should configure the postgres database and execute the following command:
 
 - mvn test
 
+If you want to build the project and run the tests use:
+
+- mvn clean install
+
 ## Usage
 
-You can import the "Assessment - Jorge Diaz.postman_collection.json" file into postman to call the APIs
+You can import the "Assessment - Jorge Diaz.postman_collection.json" file into postman to call the APIs.
