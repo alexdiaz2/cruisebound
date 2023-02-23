@@ -42,9 +42,6 @@ class SailingControllerTest {
     @Mock
     lateinit var sailingService: SailingServiceImpl
 
-   // @MockBean
-    //lateinit var sailingRepository: SailingRepository
-
     @BeforeEach
     fun setUp() {
         //  Loading data from file
@@ -203,8 +200,8 @@ class SailingControllerTest {
     fun searchSailingsExample6() {
         val price = 999.9
         val localDepartureDate = LocalDate.parse("2022-11-26", DateTimeFormatter.ofPattern("yyyy-MM-dd"))
-        val filteredResults = results.results.stream().filter { x ->
-            x.departureDate!! == localDepartureDate && x.price!!.equals(price)
+        val filteredResults = results.results.stream().filter { sailing ->
+            sailing.departureDate!! == localDepartureDate && sailing.price!!.equals(price)
         }.collect(Collectors.toList())
 
         `when`(sailingService.searchSailings(1, "id", "asc", price,
@@ -234,7 +231,7 @@ class SailingControllerTest {
             )
             assertEquals(JsonPath.read(mvcResult.response.contentAsString, "$.results[$i].price"),
                 price
-                )
+            )
         }
     }
 
@@ -245,11 +242,11 @@ class SailingControllerTest {
         val localReturnDate = LocalDate.parse("2022-12-01", DateTimeFormatter.ofPattern("yyyy-MM-dd"))
         val duration = 5
 
-        val filteredResults = results.results.stream().filter { x ->
-            x.departureDate!! == localDepartureDate &&
-            x.price!!.equals(price) &&
-            x.duration!! == duration &&
-            x.returnDate!! == localReturnDate
+        val filteredResults = results.results.stream().filter { sailing ->
+            sailing.departureDate!! == localDepartureDate &&
+            sailing.price!!.equals(price) &&
+            sailing.duration!! == duration &&
+            sailing.returnDate!! == localReturnDate
         }.collect(Collectors.toList())
 
         `when`(sailingService.searchSailings(1, "price", "desc", price,

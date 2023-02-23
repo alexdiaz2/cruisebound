@@ -44,9 +44,9 @@ class SailingsBootstrapTest {
 
         `when`(sailingRepository.saveAll(anyList())).thenReturn(results.results)
 
-        val mySailings = sailingService.addSailings(results.results)
+        val sailings = sailingService.addSailings(results.results)
 
-        assertNotNull(mySailings)
-        assertThat(mySailings).hasSize(100)
+        assertNotNull(sailings)
+        assertThat(sailings).hasSize(100)
     }
 }
